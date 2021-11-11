@@ -1,0 +1,35 @@
+{
+  "name": "@koffeine/kss",
+  "version": "0.0.2",
+  "description": "Koffeine's Style Sheets",
+  "keywords": [
+    "css"
+  ],
+  "homepage": "https://github.com/koffeine/kss",
+  "bugs": {
+    "url": "https://github.com/koffeine/kss/issues"
+  },
+  "license": "MIT",
+  "author": "Kornél Horváth <kornel.horvath@me.com>",
+  "files": [
+    "index.css",
+    "*.woff2"
+  ],
+  "exports": {
+    ".": "./index.css",
+    "./*.woff2": "./*.woff2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koffeine/kss.git"
+  },
+  "scripts": {
+    "prepublishOnly": "esbuild --loader:.woff2=file --bundle --minify --outfile=index.css --asset-names=[name] src/index.css",
+    "postpublish": "rm index.css *.woff2"
+  },
+  "devDependencies": {
+    "@koffeine/eslint-config": "24.1.1",
+    "esbuild": "^0",
+    "eslint": "8.2.0"
+  }
+}
