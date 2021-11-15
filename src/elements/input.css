@@ -1,0 +1,24 @@
+input {
+	margin: 0;
+	border: none;
+	border-radius: 0.125em;
+	background-color: var(--form-background-color);
+	padding: 0.25em 0.5em;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	color: var(--form-foreground-color);
+}
+
+input:read-only {
+	color: var(--form-read-only-color);
+	cursor: text;
+}
+
+input:focus {
+	outline: none;
+}
+
+input:focus:read-write {
+	box-shadow: inset 0 0 0.125em var(--form-accent-color);
+}
