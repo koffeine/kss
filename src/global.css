@@ -12,10 +12,6 @@ body {
 	box-sizing: inherit;
 }
 
-a {
-	text-decoration: none;
-}
-
 button, input, select, textarea {
 	margin: 0;
 	font-family: inherit;
