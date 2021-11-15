@@ -24,12 +24,14 @@
     "url": "git+https://github.com/koffeine/kss.git"
   },
   "scripts": {
+    "dev": "vite",
     "prepublishOnly": "esbuild --loader:.woff2=file --bundle --minify --outfile=index.css --asset-names=[name] src/index.css",
     "postpublish": "rm index.css *.woff2"
   },
   "devDependencies": {
     "@koffeine/eslint-config": "24.1.1",
     "esbuild": "^0",
-    "eslint": "8.2.0"
+    "eslint": "8.2.0",
+    "vite": "^2"
   }
 }
