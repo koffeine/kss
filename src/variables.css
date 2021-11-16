@@ -6,5 +6,5 @@
 	--form-background-color: #333333;
 	--form-read-only-color: #909090;
 	--form-foreground-color: #eeeeee;
-	--form-accent-color: #4f46e5; /* images/search-cancel-button.svg  */
+	--form-accent-color: #4f46e5; /* images/(calendar|clock|search-cancel-button).svg  */
 }

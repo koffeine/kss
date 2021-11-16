@@ -7,12 +7,12 @@ input {
 	font-family: inherit;
 	font-size: inherit;
 	line-height: inherit;
+	cursor: text;
 	color: var(--form-foreground-color);
 }
 
 input:read-only {
 	color: var(--form-read-only-color);
-	cursor: text;
 }
 
 input:focus {
