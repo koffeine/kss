@@ -5,6 +5,7 @@
 @import url(./elements/a.css);
 @import url(./elements/input.css);
 @import url(./elements/input.checkbox.css);
+@import url(./elements/input.color.css);
 @import url(./elements/input.date.css);
 @import url(./elements/input.number.css);
 @import url(./elements/input.radio.css);

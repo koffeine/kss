@@ -1,0 +1,29 @@
+input[type=color] {
+	position: relative;
+	top: 0.125em;
+	width: 1em;
+	height: 1em;
+	padding: 0;
+}
+
+input[type=color]:enabled {
+	cursor: pointer;
+}
+
+input[type=color]:disabled {
+	cursor: default;
+}
+
+input[type=color]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+
+input[type=color]::-webkit-color-swatch {
+	border: none;
+	border-radius: var(--border-radius);
+}
+
+input[type=color]::-moz-color-swatch {
+	border: none;
+	border-radius: var(--border-radius);
+}
