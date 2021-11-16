@@ -1,0 +1,35 @@
+input[type=radio] {
+	-webkit-appearance: none;
+	position: relative;
+	top: 0.125em;
+	width: 1em;
+	height: 1em;
+	border-radius: 50%;
+}
+
+input[type=radio]:enabled {
+	cursor: pointer;
+}
+
+input[type=radio]:disabled {
+	cursor: default;
+}
+
+input[type=radio]:checked::after {
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	width: 50%;
+	height: 50%;
+	border-radius: 50%;
+	content: ''
+}
+
+input[type=radio]:checked:enabled::after {
+	background-color: var(--form-accent-color);
+	box-shadow: inset 0 0 0.125em var(--accent-color);
+}
+
+input[type=radio]:checked:disabled::after {
+	background-color: var(--form-read-only-color);
+}
