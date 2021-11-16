@@ -1,0 +1,16 @@
+table {
+	border-collapse: collapse;
+}
+
+tr {
+	border-bottom: 0.0625em solid var(--middleground-color);
+}
+
+th {
+	padding: var(--padding);
+	text-align: left;
+}
+
+td {
+	padding: var(--padding);
+}
