@@ -1,0 +1,29 @@
+select {
+	-webkit-appearance: none;
+	margin: 0;
+	border: none;
+	border-radius: var(--border-radius);
+	background-color: var(--form-background-color);
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+
+select:enabled {
+	background-image: url(../images/select.svg);
+	background-position: right 0.5em center;
+	background-repeat: no-repeat;
+	padding: var(--vertical-padding) calc(2 * var(--horizontal-padding) + 9px) var(--vertical-padding) var(--horizontal-padding);
+	cursor: pointer;
+	color: var(--form-foreground-color);
+}
+
+select:disabled {
+	padding: var(--padding);
+	color: var(--form-read-only-color);
+	opacity: 1;
+}
+
+select:focus {
+	outline: none;
+}

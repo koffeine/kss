@@ -1,5 +1,8 @@
 :root {
 	--border-radius: 0.125em;
+	--vertical-padding: 0.25em;
+	--horizontal-padding: 0.5em;
+	--padding: var(--vertical-padding) var(--horizontal-padding);
 
 	--background-color: #222222;
 	--foreground-color: #dddddd;
@@ -8,5 +11,5 @@
 	--form-background-color: #333333;
 	--form-read-only-color: #909090;
 	--form-foreground-color: #eeeeee;
-	--form-accent-color: #4f46e5; /* images/(calendar|clock|search-cancel-button).svg  */
+	--form-accent-color: #4f46e5; /* images/(calendar|clock|search-cancel-button|select).svg  */
 }

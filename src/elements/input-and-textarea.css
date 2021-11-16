@@ -3,7 +3,7 @@ input, textarea {
 	border: none;
 	border-radius: var(--border-radius);
 	background-color: var(--form-background-color);
-	padding: 0.25em 0.5em;
+	padding: var(--padding);
 	font-family: inherit;
 	font-size: inherit;
 	line-height: inherit;

@@ -12,13 +12,9 @@ body {
 	box-sizing: inherit;
 }
 
-button, select {
+button {
 	margin: 0;
 	font-family: inherit;
 	font-size: inherit;
 	line-height: inherit;
-}
-
-select:focus {
-	outline: none;
 }
