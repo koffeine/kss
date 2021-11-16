@@ -1,4 +1,6 @@
 :root {
+	--border-radius: 0.125em;
+
 	--background-color: #222222;
 	--foreground-color: #dddddd;
 	--accent-color: #6366f1;
