@@ -12,13 +12,13 @@ body {
 	box-sizing: inherit;
 }
 
-button, select, textarea {
+button, select {
 	margin: 0;
 	font-family: inherit;
 	font-size: inherit;
 	line-height: inherit;
 }
 
-select:focus, textarea:focus {
+select:focus {
 	outline: none;
 }
