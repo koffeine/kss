@@ -16,3 +16,5 @@
 @import url(./elements/label.css);
 @import url(./elements/select.css);
 @import url(./elements/table.css);
+
+@import url(./components/group.css);
