@@ -26,3 +26,7 @@ th {
 td {
 	padding: 0.5em;
 }
+
+label {
+	padding-left: 0;
+}
