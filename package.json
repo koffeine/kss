@@ -13,11 +13,11 @@
   "author": "Kornél Horváth <kornel.horvath@me.com>",
   "files": [
     "index.css",
-    "*.woff2"
+    "assets"
   ],
   "exports": {
     ".": "./index.css",
-    "./*.woff2": "./*.woff2"
+    "./assets/*": "./assets/*"
   },
   "repository": {
     "type": "git",
@@ -25,8 +25,8 @@
   },
   "scripts": {
     "dev": "vite",
-    "prepublishOnly": "esbuild --loader:.woff2=file --bundle --minify --outfile=index.css --asset-names=[name] src/index.css",
-    "postpublish": "rm index.css *.woff2"
+    "prepublishOnly": "esbuild --loader:.woff2=file --loader:.svg=file --bundle --minify --outfile=index.css --asset-names=assets/[name] src/index.css",
+    "postpublish": "rm -rf index.css assets"
   },
   "devDependencies": {
     "@koffeine/eslint-config": "24.1.1",
