@@ -21,3 +21,8 @@ td {
 label {
 	padding-left: 0;
 }
+
+input, textarea, select {
+	width: 12em;
+	height: 2em;
+}
