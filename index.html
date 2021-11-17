@@ -14,12 +14,14 @@
 		<main>
 			<h1><a href="/">kss</a></h1>
 
+			<h2>inputs, textarea & select</h2>
+
 			<table>
 				<thead>
 					<tr>
 						<th>type</th>
-						<th>read-write</th>
-						<th>read-only</th>
+						<th>read-write / enabled</th>
+						<th>read-only / disabled</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -70,18 +72,11 @@
 						<td><textarea>textarea</textarea></td>
 						<td><textarea readonly>textarea</textarea></td>
 					</tr>
-				</tbody>
-			</table>
-
-			<table style="margin-top: 2em;">
-				<thead>
 					<tr>
-						<th>type</th>
-						<th>enabled</th>
-						<th>disabled</th>
+						<td><label>select</label></td>
+						<td><select><option value="select">select</option></select></td>
+						<td><select disabled><option value="select">select</option></select></td>
 					</tr>
-				</thead>
-				<tbody>
 					<tr>
 						<td><label>file</label></td>
 						<td>
@@ -90,11 +85,6 @@
 						<td>
 							<input type="file" value="" disabled>
 						</td>
-					</tr>
-					<tr>
-						<td><label>select</label></td>
-						<td><select><option value="select">select</option></select></td>
-						<td><select disabled><option value="select">select</option></select></td>
 					</tr>
 					<tr>
 						<td><label>checkbox</label></td>
@@ -136,6 +126,20 @@
 							<input type="color" value="" disabled>
 						</td>
 					</tr>
+				</tbody>
+			</table>
+
+			<h2>button</h2>
+
+			<table>
+				<thead>
+					<tr>
+						<th>type</th>
+						<th>enabled</th>
+						<th>disabled</th>
+					</tr>
+				</thead>
+				<tbody>
 					<tr>
 						<td>button</td>
 						<td><button type="button">button</button></td>
@@ -149,8 +153,9 @@
 				</tbody>
 			</table>
 
-			<div class="group" style="margin-top: 2em;">
-				<label>.group</label>
+			<h2>.group</h2>
+
+			<div class="group">
 				<input type="text" value="text">
 				<button type="button">Default</button>
 				<select><option value="select">select</option></select>

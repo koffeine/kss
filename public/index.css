@@ -1,20 +1,12 @@
 main {
 	max-width: 80em;
-	margin: 2em auto;
+	margin: 0 auto 2em auto;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 }
 
-h1 {
-	text-align: center;
-}
-
-th {
-	padding: 0.5em;
-}
-
-td {
+th, td {
 	padding: 0.5em;
 }
 
