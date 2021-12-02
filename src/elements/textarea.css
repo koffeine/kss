@@ -1,0 +1,29 @@
+textarea {
+	vertical-align: top;
+	margin: 0;
+	border: none;
+	border-radius: var(--border-radius);
+	background-color: var(--form-background-color);
+	padding: var(--padding);
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	cursor: text;
+	resize: none;
+}
+
+textarea:read-write {
+	color: var(--form-foreground-color);
+}
+
+textarea:read-only {
+	color: var(--form-read-only-color);
+}
+
+textarea:focus {
+	outline: none;
+}
+
+textarea:focus:read-write {
+	box-shadow: inset 0 0 0.125em var(--form-accent-color);
+}

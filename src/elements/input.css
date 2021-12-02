@@ -1,4 +1,4 @@
-input, textarea {
+input {
 	margin: 0;
 	border: none;
 	border-radius: var(--border-radius);
@@ -10,18 +10,18 @@ input, textarea {
 	cursor: text;
 }
 
-input:read-write, textarea:read-write {
+input:read-write {
 	color: var(--form-foreground-color);
 }
 
-input:read-only, textarea:read-only {
+input:read-only {
 	color: var(--form-read-only-color);
 }
 
-input:focus, textarea:focus {
+input:focus {
 	outline: none;
 }
 
-input:focus:not([readonly], [disabled]), textarea:focus:read-write {
+input:focus:not([readonly], [disabled]) {
 	box-shadow: inset 0 0 0.125em var(--form-accent-color);
 }
