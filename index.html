@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>kss</title>
+
+		<link rel="icon" type="image/png" href="/favicon.png">
+		
+		<link rel="stylesheet" href="/index.css">
+		<link rel="stylesheet" href="/assets/index.ad0c1eb9.css">
+	</head>
+	<body>
+		<main>
+			<h1><a href="/">kss</a></h1>
+
+			<h2>inputs, textarea & select</h2>
+
+			<table>
+				<thead>
+					<tr>
+						<th>type</th>
+						<th>read-write / enabled</th>
+						<th>read-only / disabled</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td title="email, password, tel, text & url"><label>text<sup>*</sup></label></td>
+						<td><input type="text" value="text"></td>
+						<td><input type="text" value="text" readonly></td>
+					</tr>
+					<tr>
+						<td><label>number</label></td>
+						<td><input type="number" value="0"></td>
+						<td><input type="number" value="0" readonly></td>
+					</tr>
+					<tr>
+						<td><label>search</label></td>
+						<td><input type="search" value="search"></td>
+						<td><input type="search" value="search" readonly></td>
+					</tr>
+					<tr>
+						<td><label>date</label></td>
+						<td><input type="date" value=""></td>
+						<td><input type="date" value="" readonly></td>
+					</tr>
+					<tr>
+						<td><label>datetime-local</label></td>
+						<td><input type="datetime-local" value=""></td>
+						<td><input type="datetime-local" value="" readonly></td>
+					</tr>
+					<!-- Firefox: https://bugzil.la/888320, Safari: https://webkit.org/b/200416 -->
+					<!-- <tr>
+						<td><label>month</label></td>
+						<td><input type="month" value=""></td>
+						<td><input type="month" value="" readonly></td>
+					</tr> -->
+					<tr>
+						<td><label>time</label></td>
+						<td><input type="time" value=""></td>
+						<td><input type="time" value="" readonly></td>
+					</tr>
+					<!-- Firefox: https://bugzil.la/888320, Safari: https://webkit.org/b/200416 -->
+					<!-- <tr>
+						<td><label>week</label></td>
+						<td><input type="week" value=""></td>
+						<td><input type="week" value="" readonly></td>
+					</tr> -->
+					<tr>
+						<td><label>textarea</label></td>
+						<td><textarea>textarea</textarea></td>
+						<td><textarea readonly>textarea</textarea></td>
+					</tr>
+					<tr>
+						<td><label>select</label></td>
+						<td><select><option value="select">select</option></select></td>
+						<td><select disabled><option value="select">select</option></select></td>
+					</tr>
+					<tr>
+						<td><label>file</label></td>
+						<td>
+							<input type="file" value="">
+						</td>
+						<td>
+							<input type="file" value="" disabled>
+						</td>
+					</tr>
+					<tr>
+						<td><label>checkbox</label></td>
+						<td>
+							<input type="checkbox" value="checkbox">
+							<input type="checkbox" value="checkbox" checked>
+						</td>
+						<td>
+							<input type="checkbox" value="checkbox" disabled>
+							<input type="checkbox" value="checkbox" checked disabled>
+						</td>
+					</tr>
+					<tr>
+						<td><label>radio</label></td>
+						<td>
+							<input type="radio" value="radio">
+							<input type="radio" value="radio" checked>
+						</td>
+						<td>
+							<input type="radio" value="radio" disabled>
+							<input type="radio" value="radio" checked disabled>
+						</td>
+					</tr>
+					<tr>
+						<td><label>range</label></td>
+						<td>
+							<input type="range" value="">
+						</td>
+						<td>
+							<input type="range" value="" disabled>
+						</td>
+					</tr>
+					<tr>
+						<td><label>color</label></td>
+						<td>
+							<input type="color" value="">
+						</td>
+						<td>
+							<input type="color" value="" disabled>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h2>buttons</h2>
+
+			<table>
+				<thead>
+					<tr>
+						<th>type</th>
+						<th>enabled</th>
+						<th>disabled</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>button</td>
+						<td><button type="button">button</button></td>
+						<td><button type="button" disabled>button</button></td>
+					</tr>
+					<tr>
+						<td>button.indigo</td>
+						<td><button type="button" class="indigo">button</button></td>
+						<td><button type="button" class="indigo" disabled>button</button></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h2>.group</h2>
+
+			<div class="group">
+				<input type="text" value="text">
+				<button type="button">Default</button>
+				<select><option value="select">select</option></select>
+				<button type="button" class="indigo">Indigo</button>
+			</div>
+		</main>
+	</body>
+</html>
