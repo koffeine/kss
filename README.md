@@ -5,6 +5,10 @@
 
 Koffeine's Style Sheets
 
+## Demo
+
+[https://koffeine.github.io/kss/](https://koffeine.github.io/kss/)
+
 ## Installation
 
 ```sh
