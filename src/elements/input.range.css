@@ -1,5 +1,4 @@
 input[type=range] {
-	-webkit-appearance: none;
 	position: relative;
 	top: -0.125em;
 	height: 0.5em;

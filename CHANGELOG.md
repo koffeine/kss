@@ -8,6 +8,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Added `-webkit-appearance: none` to input and textarea elements (fixes missing focus box-shadows on iOS)
+- Added `height: calc(var(--line-height) * 1em + var(--vertical-padding) * 2)` to date, datetime-local and time inputs (fixes too small height when value is empty on iOS)
+- Added `vertical-align: top` to date, datetime-local and time inputs (removes extra gap at bottom on iOS)
+- Added `text-align: left` to input::-webkit-date-and-time-value (fixes center alignment on iOS)
+
+### Removed
+
+- Removed `-webkit-appearance: none` from checkbox, radio and range inputs (these are now inherited from input)
+
 
 ## [1.0.3] - 2022-02-05
 

@@ -1,6 +1,7 @@
 :root {
 	color-scheme: dark;
 
+	--line-height: 1.5;
 	--border-radius: 0.125em;
 	--vertical-padding: 0.25em;
 	--horizontal-padding: 0.5em;
