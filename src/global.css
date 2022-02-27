@@ -3,7 +3,7 @@ body {
 	background-color: var(--background-color);
 	color: var(--foreground-color);
 	font-family: Roboto, sans-serif;
-	line-height: 1.5;
+	line-height: var(--line-height);
 
 	box-sizing: border-box;
 }
