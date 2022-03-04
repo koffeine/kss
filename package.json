@@ -24,6 +24,7 @@
     "url": "git+https://github.com/koffeine/kss.git"
   },
   "scripts": {
+    "test": "",
     "dev": "vite",
     "gh-pages": "vite build --mode gh-pages",
     "prepublishOnly": "esbuild --loader:.woff2=file --loader:.svg=file --bundle --minify --outfile=index.css --asset-names=assets/[name] src/index.css",
