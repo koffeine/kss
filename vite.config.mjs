@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig(({ mode }) => ({
-	base: mode === 'gh-pages' ? '/kss/' : '/',
+	base: mode === 'production' ? '/kss/' : '/',
 	server: { open: true }
 }));
