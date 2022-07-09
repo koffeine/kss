@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+
+## [1.0.5] - 2022-07-09
+
 ### Fixed
 
 - Fixed warning with vite-plugin-svelte/rollup-plugin-svelte
