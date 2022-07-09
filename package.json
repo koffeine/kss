@@ -17,7 +17,8 @@
   ],
   "exports": {
     ".": "./index.css",
-    "./assets/*": "./assets/*"
+    "./assets/*": "./assets/*",
+    "./package.json": "./package.json"
   },
   "repository": {
     "type": "git",
