@@ -6,7 +6,7 @@ module.exports = {
 	extends: '@koffeine',
 	parserOptions: {
 		ecmaVersion: 'latest',
-		sourceType: 'script'
+		sourceType: 'module'
 	},
 	env: {
 		es2022: true,
@@ -14,9 +14,9 @@ module.exports = {
 	},
 	overrides: [
 		{
-			files: '*.mjs',
+			files: '*.cjs',
 			parserOptions: {
-				sourceType: 'module'
+				sourceType: 'script'
 			}
 		}
 	]
