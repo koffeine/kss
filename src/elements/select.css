@@ -1,6 +1,5 @@
 select {
 	appearance: none;
-	margin: 0;
 	border: none;
 	border-radius: var(--border-radius);
 	background-color: var(--form-background-color);
@@ -13,7 +12,7 @@ select:enabled {
 	background-image: url(../images/select.svg);
 	background-position: right var(--horizontal-padding) center;
 	background-repeat: no-repeat;
-	background-size: 0.75em 0.75em;
+	background-size: 0.75em;
 	padding: var(--vertical-padding) calc(2 * var(--horizontal-padding) + 9px) var(--vertical-padding) var(--horizontal-padding);
 	padding: var(--vertical-padding) calc(2 * var(--horizontal-padding) + 0.75em) var(--vertical-padding) var(--horizontal-padding);
 	cursor: pointer;
