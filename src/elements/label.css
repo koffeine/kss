@@ -1,5 +1,8 @@
 label {
 	display: inline-block;
 	padding: var(--padding);
+}
+
+label[for] {
 	cursor: pointer;
 }

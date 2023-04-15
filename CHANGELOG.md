@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Replaced `-webkit-appearance: none` with `appearance: none` (browser prefix no longer needed)
 - Moved `margin: 0` from input to checkbox, radio and range inputs (only where it's needed)
+- Moved `cursor: pointer` from label to label with for attribute (fixes cursor for floating labels)
 
 
 ## [1.0.5] - 2022-07-09
