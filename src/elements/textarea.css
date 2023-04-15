@@ -1,5 +1,5 @@
 textarea {
-	-webkit-appearance: none;
+	appearance: none;
 	vertical-align: top;
 	margin: 0;
 	border: none;

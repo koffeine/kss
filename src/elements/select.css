@@ -1,5 +1,5 @@
 select {
-	-webkit-appearance: none;
+	appearance: none;
 	margin: 0;
 	border: none;
 	border-radius: var(--border-radius);

@@ -1,5 +1,5 @@
 input[type=search]::-webkit-search-cancel-button {
-	-webkit-appearance: none;
+	appearance: none;
 	align-self: center;
 	width: 0.75em;
 	height: 0.75em;
