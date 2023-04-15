@@ -3,6 +3,7 @@ input[type=checkbox] {
 	top: 0.125em;
 	width: 1em;
 	height: 1em;
+	margin: 0;
 }
 
 input[type=checkbox]:enabled {
