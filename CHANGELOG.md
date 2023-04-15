@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Moved `margin: 0` from input to checkbox, radio and range inputs (only where it's needed)
 - Moved `cursor: pointer` from label to label with for attribute (fixes cursor for floating labels)
 - Moved `cursor: pointer` from hovering enabled button to enabled button (simpler)
+- Fixed select arrow position and padding
 
 
 ## [1.0.5] - 2022-07-09
