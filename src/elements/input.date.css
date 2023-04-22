@@ -6,19 +6,15 @@ input[type=time] {
 	height: calc(var(--line-height) * 1em + var(--vertical-padding) * 2);
 }
 
-input::-webkit-datetime-edit,
-input::-webkit-datetime-edit-fields-wrapper {
-	padding: 0;
-}
-
+input::-webkit-datetime-edit, /* Safari macOS */
+input::-webkit-datetime-edit-fields-wrapper,
 input::-webkit-datetime-edit-year-field,
 input::-webkit-datetime-edit-month-field,
 input::-webkit-datetime-edit-day-field,
 input::-webkit-datetime-edit-ampm-field,
 input::-webkit-datetime-edit-hour-field,
 input::-webkit-datetime-edit-minute-field {
-	padding-top: 0;
-	padding-bottom: 0;
+	padding: 0;
 }
 
 input::-webkit-calendar-picker-indicator {
