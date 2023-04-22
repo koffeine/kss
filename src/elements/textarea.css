@@ -23,8 +23,5 @@ textarea:read-only {
 
 textarea:focus {
 	outline: none;
-}
-
-textarea:focus:read-write {
 	box-shadow: inset 0 0 0.125em var(--form-accent-color);
 }
