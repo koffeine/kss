@@ -26,10 +26,21 @@
 				</thead>
 				<tbody>
 					<tr>
-						<td title="email, password, tel, text & url"><label for="text">text*</label></td>
+						<td><label for="text">text</label></td>
 						<td><input type="text" value="text" id="text"></td>
 						<td><input type="text" value="text" readonly></td>
 					</tr>
+					<tr>
+						<td><label for="password">password</label></td>
+						<td><input type="password" value="password" id="password"></td>
+						<td><input type="password" value="password" readonly></td>
+					</tr>
+					<!-- Safari has extra functionality not supported in other browsers -->
+					<!-- <tr>
+						<td><label for="email">email</label></td>
+						<td><input type="email" value="email" id="email"></td>
+						<td><input type="email" value="email" readonly></td>
+					</tr> -->
 					<!-- Firefox & Safari allows non-numerical characters -->
 					<!-- <tr>
 						<td><label for="number">number</label></td>
@@ -42,15 +53,32 @@
 						<td><input type="search" value="search" id="search"></td>
 						<td><input type="search" value="search" readonly></td>
 					</tr> -->
+					<!-- Safari has extra functionality not supported in other browsers -->
+					<!-- <tr>
+						<td><label for="tel">tel</label></td>
+						<td><input type="tel" value="tel" id="tel"></td>
+						<td><input type="tel" value="tel" readonly></td>
+					</tr> -->
+					<!-- Same as input[type="text"] -->
+					<!-- <tr>
+						<td><label for="url">url</label></td>
+						<td><input type="url" value="url" id="url"></td>
+						<td><input type="url" value="url" readonly></td>
+					</tr> -->
+					<tr>
+						<td><label for="datetime-local">datetime-local</label></td>
+						<td><input type="datetime-local" value="" id="datetime-local"></td>
+						<td><input type="datetime-local" value="" readonly></td>
+					</tr>
 					<tr>
 						<td><label for="date">date</label></td>
 						<td><input type="date" value="" id="date"></td>
 						<td><input type="date" value="" readonly></td>
 					</tr>
 					<tr>
-						<td><label for="datetime-local">datetime-local</label></td>
-						<td><input type="datetime-local" value="" id="datetime-local"></td>
-						<td><input type="datetime-local" value="" readonly></td>
+						<td><label for="time">time</label></td>
+						<td><input type="time" value="" id="time"></td>
+						<td><input type="time" value="" readonly></td>
 					</tr>
 					<!-- Firefox: https://bugzil.la/888320, Safari: https://webkit.org/b/200416 -->
 					<!-- <tr>
@@ -58,11 +86,6 @@
 						<td><input type="month" value="" id="month"></td>
 						<td><input type="month" value="" readonly></td>
 					</tr> -->
-					<tr>
-						<td><label for="time">time</label></td>
-						<td><input type="time" value="" id="time"></td>
-						<td><input type="time" value="" readonly></td>
-					</tr>
 					<!-- Firefox: https://bugzil.la/888320, Safari: https://webkit.org/b/200416 -->
 					<!-- <tr>
 						<td><label for="week">week</label></td>
@@ -89,6 +112,15 @@
 						</td>
 					</tr>
 					<tr>
+						<td><label for="range">range</label></td>
+						<td>
+							<input type="range" value="" id="range">
+						</td>
+						<td>
+							<input type="range" value="" disabled>
+						</td>
+					</tr>
+					<tr>
 						<td><label>checkbox</label></td>
 						<td>
 							<input type="checkbox" value="checkbox">
@@ -108,15 +140,6 @@
 						<td>
 							<input type="radio" value="radio" disabled>
 							<input type="radio" value="radio" checked disabled>
-						</td>
-					</tr>
-					<tr>
-						<td><label for="range">range</label></td>
-						<td>
-							<input type="range" value="" id="range">
-						</td>
-						<td>
-							<input type="range" value="" disabled>
 						</td>
 					</tr>
 					<tr>
