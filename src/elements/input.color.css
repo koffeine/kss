@@ -26,11 +26,13 @@ input[type=color]:focus:enabled::-webkit-color-swatch {
 	box-shadow: inset 0 0 0.125em var(--form-accent-color);
 }
 
+/* Firefox */
 input[type=color]::-moz-color-swatch {
 	border: none;
 	border-radius: var(--border-radius);
 }
 
+/* Firefox */
 input[type=color]:focus:enabled::-moz-color-swatch {
 	box-shadow: inset 0 0 0.125em var(--form-accent-color);
 }

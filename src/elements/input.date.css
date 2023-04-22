@@ -2,8 +2,8 @@ input[type=date],
 input[type=datetime-local],
 input[type=time] {
 	cursor: text;
-	vertical-align: top;
-	height: calc(var(--line-height) * 1em + var(--vertical-padding) * 2);
+	vertical-align: top; /* Safari iOS/iPadOS */
+	height: calc(var(--line-height) * 1em + var(--vertical-padding) * 2); /* Safari iOS/iPadOS */
 }
 
 input::-webkit-datetime-edit, /* Safari macOS */
@@ -33,6 +33,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
 	background-image: url(../images/clock.svg);
 }
 
+/* Safari iOS/iPadOS */
 input::-webkit-date-and-time-value {
 	text-align: left;
 }

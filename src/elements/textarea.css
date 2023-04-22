@@ -1,7 +1,7 @@
 textarea {
-	appearance: none;
+	appearance: none; /* Safari iOS/iPadOS */
 	vertical-align: top;
-	margin: 0;
+	margin: 0; /* Firefox */
 	border: none;
 	border-radius: var(--border-radius);
 	background-color: var(--form-background-color);
@@ -18,7 +18,7 @@ textarea:read-write {
 
 textarea:read-only {
 	color: var(--form-read-only-color);
-	cursor: text;
+	cursor: text; /* Safari macOS */
 }
 
 textarea:focus {
