@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 - Fixed missing focus on readonly inputs & textarea (because they are focusable)
+- Fixed position of checkbox, color & radio inputs (they are now vertically centered)
 
 
 ## [2.0.1] - 2023-04-16

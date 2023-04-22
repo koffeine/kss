@@ -1,6 +1,5 @@
 input[type=color] {
-	position: relative;
-	top: 0.125em;
+	vertical-align: middle;
 	width: 1em;
 	height: 1em;
 	padding: 0;
