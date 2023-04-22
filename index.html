@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<!--meta name="viewport" content="width=device-width, initial-scale=1"-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<title>kss</title>
 
@@ -11,181 +11,180 @@
 		<link rel="stylesheet" href="/index.css">
 	</head>
 	<body>
-		<main>
-			<h1><a href="/">kss</a></h1>
+		<h1><a href="https://github.com/koffeine/kss">kss</a></h1>
 
-			<h2>inputs, textarea & select</h2>
+		<h2>inputs, textarea & select</h2>
 
-			<table>
-				<thead>
-					<tr>
-						<th>type</th>
-						<th>read-write / enabled</th>
-						<th>read-only / disabled</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td><label for="text">text</label></td>
-						<td><input type="text" value="text" id="text"></td>
-						<td><input type="text" value="text" readonly></td>
-					</tr>
-					<tr>
-						<td><label for="password">password</label></td>
-						<td><input type="password" value="password" id="password"></td>
-						<td><input type="password" value="password" readonly></td>
-					</tr>
-					<!-- Safari has extra functionality not supported in other browsers -->
-					<!-- <tr>
-						<td><label for="email">email</label></td>
-						<td><input type="email" value="email" id="email"></td>
-						<td><input type="email" value="email" readonly></td>
-					</tr> -->
-					<!-- Firefox & Safari allows non-numerical characters -->
-					<!-- <tr>
-						<td><label for="number">number</label></td>
-						<td><input type="number" value="0" id="number"></td>
-						<td><input type="number" value="0" readonly></td>
-					</tr> -->
-					<!-- Firefox: https://bugzilla.mozilla.org/show_bug.cgi?id=558594 -->
-					<!-- <tr>
-						<td><label for="search">search</label></td>
-						<td><input type="search" value="search" id="search"></td>
-						<td><input type="search" value="search" readonly></td>
-					</tr> -->
-					<!-- Safari has extra functionality not supported in other browsers -->
-					<!-- <tr>
-						<td><label for="tel">tel</label></td>
-						<td><input type="tel" value="tel" id="tel"></td>
-						<td><input type="tel" value="tel" readonly></td>
-					</tr> -->
-					<!-- Same as input[type="text"] -->
-					<!-- <tr>
-						<td><label for="url">url</label></td>
-						<td><input type="url" value="url" id="url"></td>
-						<td><input type="url" value="url" readonly></td>
-					</tr> -->
-					<tr>
-						<td><label for="datetime-local">datetime-local</label></td>
-						<td><input type="datetime-local" value="" id="datetime-local"></td>
-						<td><input type="datetime-local" value="" readonly></td>
-					</tr>
-					<tr>
-						<td><label for="date">date</label></td>
-						<td><input type="date" value="" id="date"></td>
-						<td><input type="date" value="" readonly></td>
-					</tr>
-					<tr>
-						<td><label for="time">time</label></td>
-						<td><input type="time" value="" id="time"></td>
-						<td><input type="time" value="" readonly></td>
-					</tr>
-					<!-- Firefox: https://bugzil.la/888320, Safari: https://webkit.org/b/200416 -->
-					<!-- <tr>
-						<td><label for="month">month</label></td>
-						<td><input type="month" value="" id="month"></td>
-						<td><input type="month" value="" readonly></td>
-					</tr> -->
-					<!-- Firefox: https://bugzil.la/888320, Safari: https://webkit.org/b/200416 -->
-					<!-- <tr>
-						<td><label for="week">week</label></td>
-						<td><input type="week" value="" id="week"></td>
-						<td><input type="week" value="" readonly></td>
-					</tr> -->
-					<tr>
-						<td><label for="textarea">textarea</label></td>
-						<td><textarea id="textarea">textarea</textarea></td>
-						<td><textarea readonly>textarea</textarea></td>
-					</tr>
-					<tr>
-						<td><label for="select">select</label></td>
-						<td><select id="select"><option value="select">select</option></select></td>
-						<td><select disabled><option value="select">select</option></select></td>
-					</tr>
-					<tr>
-						<td><label for="file">file</label></td>
-						<td>
-							<input type="file" value="" id="file">
-						</td>
-						<td>
-							<input type="file" value="" disabled>
-						</td>
-					</tr>
-					<tr>
-						<td><label for="range">range</label></td>
-						<td>
-							<input type="range" value="" id="range">
-						</td>
-						<td>
-							<input type="range" value="" disabled>
-						</td>
-					</tr>
-					<tr>
-						<td><label>checkbox</label></td>
-						<td>
-							<input type="checkbox" value="checkbox">
-							<input type="checkbox" value="checkbox" checked>
-						</td>
-						<td>
-							<input type="checkbox" value="checkbox" disabled>
-							<input type="checkbox" value="checkbox" checked disabled>
-						</td>
-					</tr>
-					<tr>
-						<td><label>radio</label></td>
-						<td>
-							<input type="radio" value="radio">
-							<input type="radio" value="radio" checked>
-						</td>
-						<td>
-							<input type="radio" value="radio" disabled>
-							<input type="radio" value="radio" checked disabled>
-						</td>
-					</tr>
-					<tr>
-						<td><label for="color">color</label></td>
-						<td>
-							<input type="color" value="#000000" id="color">
-						</td>
-						<td>
-							<input type="color" value="#000000" disabled>
-						</td>
-					</tr>
-				</tbody>
-			</table>
+		<div class="grid input-grid">
+			<div class="grid-header">type</div>
+			<div class="grid-header">read-write / enabled</div>
+			<div class="grid-header">read-only / disabled</div>
 
-			<h2>buttons</h2>
+			<div class="line"></div>
 
-			<table>
-				<thead>
-					<tr>
-						<th>type</th>
-						<th>enabled</th>
-						<th>disabled</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>button</td>
-						<td><button type="button">button</button></td>
-						<td><button type="button" disabled>button</button></td>
-					</tr>
-					<tr>
-						<td>button.indigo</td>
-						<td><button type="button" class="indigo">button</button></td>
-						<td><button type="button" class="indigo" disabled>button</button></td>
-					</tr>
-				</tbody>
-			</table>
+			<label for="text">text</label>
+			<input type="text" value="text" id="text">
+			<input type="text" value="text" readonly>
 
-			<h2>.group</h2>
+			<div class="line"></div>
 
-			<div class="group">
-				<input type="text" value="text">
-				<button type="button">Default</button>
-				<select><option value="select">select</option></select>
-				<button type="button" class="indigo">Indigo</button>
+			<label for="password">password</label>
+			<input type="password" value="password" id="password">
+			<input type="password" value="password" readonly>
+
+			<!-- <div class="line"></div> -->
+
+			<!-- Safari has extra functionality not supported in other browsers -->
+			<!-- <label for="email">email</label>
+			<input type="email" value="email" id="email">
+			<input type="email" value="email" readonly> -->
+
+			<!-- <div class="line"></div> -->
+
+			<!-- Firefox & Safari allows non-numerical characters -->
+			<!-- <label for="number">number</label>
+			<input type="number" value="0" id="number">
+			<input type="number" value="0" readonly> -->
+
+			<!-- <div class="line"></div> -->
+
+			<!-- Firefox: https://bugzilla.mozilla.org/show_bug.cgi?id=558594 -->
+			<!-- <label for="search">search</label>
+			<input type="search" value="search" id="search">
+			<input type="search" value="search" readonly> -->
+
+			<!-- <div class="line"></div> -->
+
+			<!-- Safari has extra functionality not supported in other browsers -->
+			<!-- <label for="tel">tel</label>
+			<input type="tel" value="tel" id="tel">
+			<input type="tel" value="tel" readonly> -->
+
+			<!-- <div class="line"></div> -->
+
+			<!-- Same as input[type="text"] -->
+			<!-- <label for="url">url</label>
+			<input type="url" value="url" id="url">
+			<input type="url" value="url" readonly> -->
+
+			<div class="line"></div>
+
+			<label for="datetime-local">datetime-local</label>
+			<input type="datetime-local" value="" id="datetime-local">
+			<input type="datetime-local" value="" readonly>
+
+			<div class="line"></div>
+
+			<label for="date">date</label>
+			<input type="date" value="" id="date">
+			<input type="date" value="" readonly>
+
+			<div class="line"></div>
+
+			<label for="time">time</label>
+			<input type="time" value="" id="time">
+			<input type="time" value="" readonly>
+
+			<!-- <div class="line"></div> -->
+
+			<!-- Firefox: https://bugzil.la/888320, Safari: https://webkit.org/b/200416 -->
+			<!-- <label for="month">month</label>
+			<input type="month" value="" id="month">
+			<input type="month" value="" readonly> -->
+
+			<!-- <div class="line"></div> -->
+
+			<!-- Firefox: https://bugzil.la/888320, Safari: https://webkit.org/b/200416 -->
+			<!-- <label for="week">week</label>
+			<input type="week" value="" id="week">
+			<input type="week" value="" readonly> -->
+
+			<div class="line"></div>
+
+			<label for="textarea">textarea</label>
+			<textarea id="textarea">textarea</textarea>
+			<textarea readonly>textarea</textarea>
+
+			<div class="line"></div>
+
+			<label for="select">select</label>
+			<select id="select"><option value="select">select</option></select>
+			<select disabled><option value="select">select</option></select>
+
+			<div class="line"></div>
+
+			<label for="file">file</label>
+			<input type="file" value="" id="file">
+			<input type="file" value="" disabled>
+
+			<div class="line"></div>
+
+			<label for="range">range</label>
+			<div class="vertical-middle"><input type="range" value="" id="range"></div>
+			<div class="vertical-middle"><input type="range" value="" disabled></div>
+
+			<div class="line"></div>
+
+			<label>checkbox</label>
+			<div class="vertical-middle">
+				<input type="checkbox" value="checkbox">
+				<input type="checkbox" value="checkbox" checked>
 			</div>
-		</main>
+			<div class="vertical-middle">
+				<input type="checkbox" value="checkbox" disabled>
+				<input type="checkbox" value="checkbox" checked disabled>
+			</div>
+
+			<div class="line"></div>
+
+			<label>radio</label>
+			<div class="vertical-middle">
+				<input type="radio" value="radio">
+				<input type="radio" value="radio" checked>
+			</div>
+			<div class="vertical-middle">
+				<input type="radio" value="radio" disabled>
+				<input type="radio" value="radio" checked disabled>
+			</div>
+
+			<div class="line"></div>
+
+			<label for="color">color</label>
+			<div class="vertical-middle"><input type="color" value="#4f46e5" id="color"></div>
+			<div class="vertical-middle"><input type="color" value="#4f46e5" disabled></div>
+
+			<div class="line"></div>
+		</div>
+
+		<h2>buttons</h2>
+
+		<div class="grid button-grid">
+			<div class="grid-header">type</div>
+			<div class="grid-header">enabled</div>
+			<div class="grid-header">disabled</div>
+
+			<div class="line"></div>
+
+			<label>button</label>
+			<button type="button">button</button>
+			<button type="button" disabled>button</button>
+
+			<div class="line"></div>
+
+			<label>button.indigo</label>
+			<button type="button" class="indigo">button</button>
+			<button type="button" class="indigo" disabled>button</button>
+
+			<div class="line"></div>
+		</div>
+
+		<h2>.group</h2>
+
+		<div class="group">
+			<input type="text" value="text">
+			<button type="button">default</button>
+			<select><option value="select">select</option></select>
+			<button type="button" class="indigo">indigo</button>
+		</div>
 	</body>
 </html>
