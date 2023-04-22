@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Updated calendar & clock icons
+- Moved `cursor: text` from input to read-only input, date, datetime-local and time inputs
 
 ### Removed
 

@@ -7,7 +7,6 @@ input {
 	font-family: inherit;
 	font-size: inherit;
 	line-height: inherit;
-	cursor: text;
 }
 
 input:read-write {
@@ -16,6 +15,7 @@ input:read-write {
 
 input:read-only {
 	color: var(--form-read-only-color);
+	cursor: text; /* Safari macOS */
 }
 
 input:focus {
