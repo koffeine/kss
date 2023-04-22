@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 
 - Removed search input (functionality not supported in Firefox)
+- Removed number input (Firefox & Safari allows non-numerical characters)
 
 
 ## [2.0.1] - 2023-04-16
