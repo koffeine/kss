@@ -9,7 +9,6 @@ textarea {
 	font-family: inherit;
 	font-size: inherit;
 	line-height: inherit;
-	cursor: text;
 	resize: none;
 }
 
@@ -19,6 +18,7 @@ textarea:read-write {
 
 textarea:read-only {
 	color: var(--form-read-only-color);
+	cursor: text;
 }
 
 textarea:focus {
