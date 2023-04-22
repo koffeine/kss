@@ -9,7 +9,7 @@
 		<link rel="icon" type="image/png" href="/kss/favicon.png">
 		
 		<link rel="stylesheet" href="/kss/index.css">
-		<link rel="stylesheet" href="/kss/assets/index-3d60f439.css">
+		<link rel="stylesheet" href="/kss/assets/index-e8007956.css">
 	</head>
 	<body>
 		<main>
@@ -27,59 +27,30 @@
 				</thead>
 				<tbody>
 					<tr>
-						<td><label for="text">text</label></td>
+						<td title="email, password, tel, text & url"><label for="text">text*</label></td>
 						<td><input type="text" value="text" id="text"></td>
 						<td><input type="text" value="text" readonly></td>
 					</tr>
 					<tr>
-						<td><label for="password">password</label></td>
-						<td><input type="password" value="password" id="password"></td>
-						<td><input type="password" value="password" readonly></td>
-					</tr>
-					<!-- Safari has extra functionality not supported in other browsers -->
-					<!-- <tr>
-						<td><label for="email">email</label></td>
-						<td><input type="email" value="email" id="email"></td>
-						<td><input type="email" value="email" readonly></td>
-					</tr> -->
-					<!-- Firefox & Safari allows non-numerical characters -->
-					<!-- <tr>
 						<td><label for="number">number</label></td>
 						<td><input type="number" value="0" id="number"></td>
 						<td><input type="number" value="0" readonly></td>
-					</tr> -->
+					</tr>
 					<!-- Firefox: https://bugzilla.mozilla.org/show_bug.cgi?id=558594 -->
 					<!-- <tr>
 						<td><label for="search">search</label></td>
 						<td><input type="search" value="search" id="search"></td>
 						<td><input type="search" value="search" readonly></td>
 					</tr> -->
-					<!-- Safari has extra functionality not supported in other browsers -->
-					<!-- <tr>
-						<td><label for="tel">tel</label></td>
-						<td><input type="tel" value="tel" id="tel"></td>
-						<td><input type="tel" value="tel" readonly></td>
-					</tr> -->
-					<!-- Same as input[type="text"] -->
-					<!-- <tr>
-						<td><label for="url">url</label></td>
-						<td><input type="url" value="url" id="url"></td>
-						<td><input type="url" value="url" readonly></td>
-					</tr> -->
-					<tr>
-						<td><label for="datetime-local">datetime-local</label></td>
-						<td><input type="datetime-local" value="" id="datetime-local"></td>
-						<td><input type="datetime-local" value="" readonly></td>
-					</tr>
 					<tr>
 						<td><label for="date">date</label></td>
 						<td><input type="date" value="" id="date"></td>
 						<td><input type="date" value="" readonly></td>
 					</tr>
 					<tr>
-						<td><label for="time">time</label></td>
-						<td><input type="time" value="" id="time"></td>
-						<td><input type="time" value="" readonly></td>
+						<td><label for="datetime-local">datetime-local</label></td>
+						<td><input type="datetime-local" value="" id="datetime-local"></td>
+						<td><input type="datetime-local" value="" readonly></td>
 					</tr>
 					<!-- Firefox: https://bugzil.la/888320, Safari: https://webkit.org/b/200416 -->
 					<!-- <tr>
@@ -87,6 +58,11 @@
 						<td><input type="month" value="" id="month"></td>
 						<td><input type="month" value="" readonly></td>
 					</tr> -->
+					<tr>
+						<td><label for="time">time</label></td>
+						<td><input type="time" value="" id="time"></td>
+						<td><input type="time" value="" readonly></td>
+					</tr>
 					<!-- Firefox: https://bugzil.la/888320, Safari: https://webkit.org/b/200416 -->
 					<!-- <tr>
 						<td><label for="week">week</label></td>
