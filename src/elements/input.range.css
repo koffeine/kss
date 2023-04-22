@@ -1,6 +1,4 @@
 input[type=range] {
-	position: relative;
-	top: -0.125em;
 	height: 0.5em;
 	margin: 0;
 	border-radius: 0.25em;
