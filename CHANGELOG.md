@@ -22,6 +22,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fixed missing focus on readonly inputs & textarea (because they are focusable)
 - Fixed position of checkbox, color & radio inputs (they are now vertically centered)
 - Fixed potential misalignment of checked marker in checkbox & radio inputs (happened when changing padding)
+- Fixed size of calendar & clock icons in Edge (they now match the size used in other browsers)
 
 
 ## [2.0.1] - 2023-04-16

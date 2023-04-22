@@ -21,6 +21,8 @@ input::-webkit-datetime-edit-minute-field {
 }
 
 input::-webkit-calendar-picker-indicator {
+	width: 1.05em; /* Edge */
+	height: 1.05em; /* Edge */
 	padding: 0;
 	cursor: pointer;
 }
