@@ -28,7 +28,8 @@
   "scripts": {
     "test": "",
     "dev": "vite --host",
-    "gh-pages": "vite build",
+    "build": "vite build",
+    "preview": "vite preview",
     "prepublishOnly": "esbuild --loader:.woff2=file --loader:.svg=file --bundle --minify --outfile=index.css --asset-names=assets/[name] src/index.css",
     "postpublish": "rm -rf index.css assets"
   },
