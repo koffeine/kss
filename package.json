@@ -1,41 +1,42 @@
 {
-  "name": "@koffeine/kss",
-  "version": "3.0.0",
-  "description": "Koffeine's Style Sheets",
-  "keywords": [
-    "css"
-  ],
-  "homepage": "https://github.com/koffeine/kss",
-  "bugs": {
-    "url": "https://github.com/koffeine/kss/issues"
-  },
-  "license": "MIT",
-  "author": "Kornél Horváth <kornel.horvath@me.com>",
-  "files": [
-    "index.css",
-    "assets"
-  ],
-  "exports": {
-    ".": "./index.css",
-    "./assets/*": "./assets/*",
-    "./package.json": "./package.json"
-  },
-  "type": "module",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/koffeine/kss.git"
-  },
-  "scripts": {
-    "test": "",
-    "dev": "vite --host",
-    "gh-pages": "vite build",
-    "prepublishOnly": "esbuild --loader:.woff2=file --loader:.svg=file --bundle --minify --outfile=index.css --asset-names=assets/[name] src/index.css",
-    "postpublish": "rm -rf index.css assets"
-  },
-  "devDependencies": {
-    "@koffeine/eslint-config": "30.0.1",
-    "esbuild": "^0",
-    "eslint": "8.38.0",
-    "vite": "^4"
-  }
+	"name": "@koffeine/kss",
+	"version": "3.0.0",
+	"description": "Koffeine's Style Sheets",
+	"keywords": [
+		"css"
+	],
+	"homepage": "https://github.com/koffeine/kss",
+	"bugs": {
+		"url": "https://github.com/koffeine/kss/issues"
+	},
+	"license": "MIT",
+	"author": "Kornél Horváth <kornel.horvath@me.com>",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/koffeine/kss.git"
+	},
+	"files": [
+		"index.css",
+		"assets"
+	],
+	"exports": {
+		".": "./index.css",
+		"./assets/*": "./assets/*",
+		"./package.json": "./package.json"
+	},
+	"type": "module",
+	"scripts": {
+		"test": "",
+		"dev": "vite --host",
+		"build": "vite build",
+		"preview": "vite preview",
+		"prepublishOnly": "esbuild --loader:.woff2=file --loader:.svg=file --bundle --minify --outfile=index.css --asset-names=assets/[name] src/index.css",
+		"postpublish": "rm -rf index.css assets"
+	},
+	"devDependencies": {
+		"@koffeine/eslint-config": "30.0.1",
+		"esbuild": "^0",
+		"eslint": "8.38.0",
+		"vite": "^4"
+	}
 }
