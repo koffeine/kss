@@ -9,12 +9,10 @@ body {
 h1 {
 	font-size: 1.5rem;
 	margin: 0;
-	text-align: center;
 }
 
 h2 {
 	font-size: 1.25rem;
-	text-align: center;
 	margin: 2rem 0 0 0;
 }
 
@@ -81,7 +79,11 @@ button {
 	flex-grow: 1;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 576px) {
+	.input-grid {
+		grid-template-columns: auto auto auto;
+	}
+
 	input, textarea, select {
 		width: 12em;
 	}
