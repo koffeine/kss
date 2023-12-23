@@ -34,9 +34,9 @@
     "postpublish": "rm -rf index.css assets"
   },
   "devDependencies": {
-    "@koffeine/eslint-config": "30.0.1",
+    "@koffeine/eslint-config": "40.13.0",
     "esbuild": "^0",
-    "eslint": "8.38.0",
-    "vite": "^4"
+    "eslint": "9.24.0",
+    "vite": "^6"
   }
 }
