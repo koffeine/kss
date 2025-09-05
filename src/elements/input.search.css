@@ -1,0 +1,19 @@
+/* Chromium, Safari macOS */
+input[type=search]::-webkit-textfield-decoration-container {
+	gap: var(--horizontal-padding);
+}
+
+/* Safari macOS */
+input[type=search]::-webkit-search-decoration {
+	display: none;
+}
+
+input[type=search]:read-write::-webkit-search-cancel-button {
+	opacity: 1; /* Chromium */
+	cursor: pointer; /* Chromium, Safari macOS */
+}
+
+/* Safari macOS */
+input[type=search]:read-only::-webkit-search-cancel-button {
+	opacity: 0;
+}
