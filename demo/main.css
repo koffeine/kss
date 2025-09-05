@@ -19,11 +19,8 @@ h2 {
 .grid {
 	margin-top: 1em;
 	display: grid;
-	gap: 0.5em;
-}
-
-.input-grid {
 	grid-template-columns: 1fr 2fr 2fr;
+	gap: 0.5em;
 }
 
 .grid-header {
@@ -61,12 +58,11 @@ input {
 	gap: 0.5em;
 }
 
-.button-grid {
-	grid-template-columns: auto auto auto;
-}
-
-button {
-	justify-self: center;
+.button-container {
+	display: flex;
+	flex-direction: column;
+	gap: var(--horizontal-padding);
+	align-items: flex-start;
 }
 
 .group {
@@ -80,11 +76,15 @@ button {
 }
 
 @media (width >= 576px) {
-	.input-grid {
+	.grid {
 		grid-template-columns: auto auto auto;
 	}
 
 	input, textarea, select {
 		width: 12em;
+	}
+
+	.button-container {
+		flex-direction: row;
 	}
 }
