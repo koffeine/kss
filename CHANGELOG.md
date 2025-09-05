@@ -12,6 +12,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Removed `--form-accent-color`
 
+### Fixed
+
+- Fixed color contrast
+
 
 ## [3.0.1] - 2025-07-10
 
