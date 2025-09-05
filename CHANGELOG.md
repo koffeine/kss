@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Fixed color contrast
 - Fixed focus
+- Fixed icon sizes of date, datetime-local, time and select
 
 
 ## [3.0.1] - 2025-07-10
