@@ -1,7 +1,6 @@
 input[type=color] {
 	--size: 1em;
 
-	vertical-align: middle;
 	width: var(--size);
 	height: var(--size);
 	margin: calc((var(--vertical-padding) + 1em * var(--line-height) + var(--vertical-padding) - var(--size)) / 2) 0;
@@ -16,17 +15,17 @@ input[type=color]:disabled {
 	cursor: default;
 }
 
+/* Chromium, Safari macOS/iPadOS/iOS */
 input[type=color]::-webkit-color-swatch-wrapper {
 	padding: 0;
 }
 
+/* Chromium */
 input[type=color]::-webkit-color-swatch {
 	border: none;
-	border-radius: var(--border-radius);
 }
 
 /* Firefox */
 input[type=color]::-moz-color-swatch {
 	border: none;
-	border-radius: var(--border-radius);
 }

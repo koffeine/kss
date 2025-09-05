@@ -1,6 +1,4 @@
 textarea {
-	appearance: none; /* Safari iOS/iPadOS */
-	vertical-align: top;
 	margin: 0; /* Firefox */
 	border: none;
 	border-radius: var(--border-radius);

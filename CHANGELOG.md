@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Changed focus from `:focus` and `box-shadow` to `:focus-visible` and `outline`
 - Changed icons sizes from `1.05em` to `1em`
 - Changed the top and bottom margins of checkbox, color, radio and range from `0` to a value that aligns their box-size with the rest of the inputs
+- Updated to current browsers
 
 ### Removed
 
