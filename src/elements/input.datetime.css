@@ -1,25 +1,64 @@
-input[type=date],
 input[type=datetime-local],
-input[type=time] {
+input[type=date] {
 	cursor: text;
-	vertical-align: top; /* Safari iOS/iPadOS */
-	height: calc(var(--line-height) * 1em + var(--vertical-padding) * 2); /* Safari iOS/iPadOS */
+	white-space: nowrap; /* Safari iOS/iPadOS */
 }
 
-input::-webkit-datetime-edit, /* Safari macOS */
-input::-webkit-datetime-edit-fields-wrapper,
-input::-webkit-datetime-edit-year-field,
-input::-webkit-datetime-edit-month-field,
-input::-webkit-datetime-edit-day-field,
-input::-webkit-datetime-edit-ampm-field,
-input::-webkit-datetime-edit-hour-field,
-input::-webkit-datetime-edit-minute-field {
+input[type=time] {
+	cursor: text;
+}
+
+/* Safari macOS */
+input[type=datetime-local]::-webkit-datetime-edit,
+input[type=date]::-webkit-datetime-edit,
+input[type=time]::-webkit-datetime-edit,
+/* Chrome, Edge, Opera */
+input[type=datetime-local]::-webkit-datetime-edit-fields-wrapper,
+input[type=date]::-webkit-datetime-edit-fields-wrapper,
+input[type=time]::-webkit-datetime-edit-fields-wrapper,
+
+/* Chrome, Edge, Opera, Safari macOS */
+input[type=datetime-local]::-webkit-datetime-edit-year-field,
+input[type=date]::-webkit-datetime-edit-year-field,
+input[type=datetime-local]::-webkit-datetime-edit-month-field,
+input[type=date]::-webkit-datetime-edit-month-field,
+input[type=datetime-local]::-webkit-datetime-edit-day-field,
+input[type=date]::-webkit-datetime-edit-day-field,
+
+/* Chrome, Edge, Opera, Safari macOS */
+input[type=datetime-local]::-webkit-datetime-edit-hour-field,
+input[type=time]::-webkit-datetime-edit-hour-field,
+input[type=datetime-local]::-webkit-datetime-edit-minute-field,
+input[type=time]::-webkit-datetime-edit-minute-field,
+/* Chrome, Edge, Opera */
+input[type=datetime-local]::-webkit-datetime-edit-ampm-field,
+input[type=time]::-webkit-datetime-edit-ampm-field,
+/* Safari macOS */
+input[type=datetime-local]::-webkit-datetime-edit-meridiem-field,
+input[type=time]::-webkit-datetime-edit-meridiem-field {
 	padding: 0;
 }
 
-input::-webkit-calendar-picker-indicator {
-	width: 1em; /* Chrome, Edge, Opera */
-	height: 1em; /* Chrome, Edge, Opera */
+/* Safari macOS */
+input[type=datetime-local]::-webkit-datetime-edit-text,
+input[type=date]::-webkit-datetime-edit-text,
+input[type=time]::-webkit-datetime-edit-text {
+	margin: 0;
+}
+
+/* Safari iOS/iPadOS */
+input[type=datetime-local]::-webkit-date-and-time-value,
+input[type=date]::-webkit-date-and-time-value,
+input[type=time]::-webkit-date-and-time-value {
+	text-align: left;
+}
+
+/* Chrome, Edge, Opera */
+input[type=datetime-local]::-webkit-calendar-picker-indicator,
+input[type=date]::-webkit-calendar-picker-indicator,
+input[type=time]::-webkit-calendar-picker-indicator {
+	width: 1em;
+	height: 1em;
 	padding: 0;
 	cursor: pointer;
 }
@@ -31,9 +70,4 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 input[type=time]::-webkit-calendar-picker-indicator {
 	background-image: url(../images/clock.svg);
-}
-
-/* Safari iOS/iPadOS */
-input::-webkit-date-and-time-value {
-	text-align: left;
 }

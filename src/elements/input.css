@@ -1,5 +1,5 @@
 input {
-	appearance: none; /* Safari iOS/iPadOS */
+	appearance: none;
 	border: none;
 	border-radius: var(--border-radius);
 	background-color: var(--form-background-color);
