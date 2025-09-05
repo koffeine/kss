@@ -55,12 +55,6 @@ input {
 	width: 100%;
 }
 
-.vertical-middle {
-	display: flex;
-	align-items: center;
-	gap: 0.5em;
-}
-
 .button-grid {
 	grid-template-columns: auto auto auto;
 }
