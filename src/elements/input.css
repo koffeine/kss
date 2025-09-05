@@ -17,8 +17,3 @@ input:read-only {
 	color: var(--form-read-only-color);
 	cursor: text; /* Safari macOS */
 }
-
-input:focus {
-	outline: none;
-	box-shadow: inset 0 0 0.125em var(--accent-color);
-}

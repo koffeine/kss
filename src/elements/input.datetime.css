@@ -37,3 +37,15 @@ input[type=time]::-webkit-calendar-picker-indicator {
 input::-webkit-date-and-time-value {
 	text-align: left;
 }
+
+/* Safari macOS/iOS/iPadOS */
+input[type=datetime-local]:focus-within,
+input[type=date]:focus-within,
+input[type=time]:focus-within,
+/* Chromium */
+input[type=datetime-local]::-webkit-calendar-picker-indicator:focus-within,
+input[type=date]::-webkit-calendar-picker-indicator:focus-within,
+input[type=time]::-webkit-calendar-picker-indicator:focus-within {
+	outline: var(--outline);
+	outline-offset: var(--outline-offset);
+}

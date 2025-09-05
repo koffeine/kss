@@ -8,6 +8,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Changed focus from `:focus` and `box-shadow` to `:focus-visible` and `outline`
+
 ### Removed
 
 - Removed `--form-accent-color`

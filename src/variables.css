@@ -1,6 +1,9 @@
 :root {
 	color-scheme: dark;
 
+	--outline: 0.0625em solid var(--accent-color);
+	--outline-offset: 0.0625em;
+
 	--border-radius: 0.125em;
 
 	--vertical-padding: 0.25em;

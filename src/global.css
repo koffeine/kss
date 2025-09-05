@@ -11,3 +11,8 @@ body {
 *, *::before, *::after {
 	box-sizing: inherit;
 }
+
+:focus-visible {
+	outline: var(--outline);
+	outline-offset: var(--outline-offset);
+}
