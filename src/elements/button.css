@@ -27,6 +27,11 @@ button:disabled {
 	opacity: 0.67;
 }
 
+button:focus-visible {
+	outline: var(--outline);
+	outline-offset: var(--outline-offset);
+}
+
 button.indigo {
 	background-color: #4f46e5;
 }

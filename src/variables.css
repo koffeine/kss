@@ -1,11 +1,16 @@
 :root {
 	color-scheme: dark;
 
-	--line-height: 1.5;
+	--outline: 0.0625em solid var(--accent-color);
+	--outline-offset: 0.0625em;
+
 	--border-radius: 0.125em;
+
 	--vertical-padding: 0.25em;
 	--horizontal-padding: 0.5em;
 	--padding: var(--vertical-padding) var(--horizontal-padding);
+
+	--line-height: 1.5;
 
 	--background-color: #222222;
 	--middleground-color: #898989;
