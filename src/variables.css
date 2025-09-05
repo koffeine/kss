@@ -8,12 +8,12 @@
 	--padding: var(--vertical-padding) var(--horizontal-padding);
 
 	--background-color: #222222;
-	--middleground-color: #808080;
-	--foreground-color: #dddddd;
+	--middleground-color: #898989;
+	--foreground-color: #f0f0f0;
 	--accent-color: #6366f1;
 
-	--form-background-color: #333333;
-	--form-read-only-color: #909090;
-	--form-foreground-color: #eeeeee;
+	--form-background-color: #313131;
+	--form-read-only-color: #989898;
+	--form-foreground-color: #ffffff;
 	--form-accent-color: #4f46e5; /* images/(calendar|clock|select).svg */
 }
