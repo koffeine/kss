@@ -52,12 +52,6 @@ input {
 	width: 100%;
 }
 
-.vertical-middle {
-	display: flex;
-	align-items: center;
-	gap: 0.5em;
-}
-
 .button-container {
 	display: flex;
 	flex-direction: column;

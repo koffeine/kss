@@ -1,7 +1,10 @@
 input[type=color] {
+	--size: 1em;
+
 	vertical-align: middle;
-	width: 1em;
-	height: 1em;
+	width: var(--size);
+	height: var(--size);
+	margin: calc((var(--vertical-padding) + 1em * var(--line-height) + var(--vertical-padding) - var(--size)) / 2) 0;
 	padding: 0;
 }
 
