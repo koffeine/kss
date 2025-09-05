@@ -1,0 +1,27 @@
+.inline-labels {
+	display: flex;
+	gap: var(--horizontal-padding);
+}
+
+label.inline {
+	display: inline-flex;
+	align-items: center;
+	gap: calc(var(--horizontal-padding) / 2);
+	padding: 0;
+}
+
+label.inline:has(:enabled) {
+	cursor: pointer;
+}
+
+
+label.block {
+	display: flex;
+	align-items: center;
+	gap: calc(var(--horizontal-padding) / 2);
+	padding: 0;
+}
+
+label.block:has(:enabled) {
+	cursor: pointer;
+}
