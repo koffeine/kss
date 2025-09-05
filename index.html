@@ -7,7 +7,7 @@
 		<title>kss</title>
 
 		<link rel="icon" type="image/png" href="/kss/assets/favicon-BVf--yA8.png">
-		<link rel="stylesheet" crossorigin href="/kss/assets/index-Djkszg_s.css">
+		<link rel="stylesheet" crossorigin href="/kss/assets/index-CelAGrJJ.css">
 	</head>
 	<body>
 		<h1><a href="https://github.com/koffeine/kss">kss</a></h1>
@@ -33,26 +33,28 @@
 
 			<!-- <div class="line"></div> -->
 
-			<!-- Same as input[type="text"] -->
+			<!-- Safari has extra functionality not supported in other browsers -->
 			<!-- <label class="label" for="email">email</label>
 			<input type="email" value="email" id="email">
 			<input type="email" value="email" readonly aria-label="readonly email"> -->
 
-			<div class="line"></div>
+			<!-- <div class="line"></div> -->
 
-			<label class="label" for="number">number</label>
+			<!-- Firefox & Safari allows non-numerical characters -->
+			<!-- <label class="label" for="number">number</label>
 			<input type="number" value="0" id="number">
-			<input type="number" value="0" readonly aria-label="readonly number">
-
-			<div class="line"></div>
-
-			<label class="label" for="search">search</label>
-			<input type="search" value="search" id="search">
-			<input type="search" value="search" readonly aria-label="readonly search">
+			<input type="number" value="0" readonly aria-label="readonly number"> -->
 
 			<!-- <div class="line"></div> -->
 
-			<!-- Same as input[type="text"] -->
+			<!-- Firefox: https://bugzilla.mozilla.org/show_bug.cgi?id=558594 -->
+			<!-- <label class="label" for="search">search</label>
+			<input type="search" value="search" id="search">
+			<input type="search" value="search" readonly aria-label="readonly search"> -->
+
+			<!-- <div class="line"></div> -->
+
+			<!-- Safari has extra functionality not supported in other browsers -->
 			<!-- <label class="label" for="tel">tel</label>
 			<input type="tel" value="tel" id="tel">
 			<input type="tel" value="tel" readonly aria-label="readonly tel"> -->
@@ -117,86 +119,38 @@
 			<div class="line"></div>
 
 			<label class="label" for="range">range</label>
-			<input type="range" value="" id="range">
-			<input type="range" value="" disabled aria-label="disabled range">
+			<div class="vertical-middle"><input type="range" value="" id="range"></div>
+			<div class="vertical-middle"><input type="range" value="" disabled aria-label="disabled range"></div>
 
 			<div class="line"></div>
 
 			<div class="label">checkbox</div>
-			<div>
+			<div class="vertical-middle">
 				<input type="checkbox" value="checkbox" aria-label="checkbox">
 				<input type="checkbox" value="checkbox" checked aria-label="checked checkbox">
 			</div>
-			<div>
+			<div class="vertical-middle">
 				<input type="checkbox" value="checkbox" disabled aria-label="disabled checkbox">
 				<input type="checkbox" value="checkbox" disabled checked aria-label="disabled checked checkbox">
 			</div>
 
 			<div class="line"></div>
 
-			<div class="label">checkbox inline</div>
-			<div>
-				<label class="inline"><input type="checkbox" value="checkbox"> checkbox</label>
-				<label class="inline"><input type="checkbox" value="checkbox" checked> checked checkbox</label>
-			</div>
-			<div>
-				<label class="inline"><input type="checkbox" value="checkbox" disabled> disabled checkbox</label>
-				<label class="inline"><input type="checkbox" value="checkbox" disabled checked> disabled checked checkbox</label>
-			</div>
-
-			<div class="line"></div>
-
-			<div class="label">checkbox block</div>
-			<div>
-				<label class="block"><input type="checkbox" value="checkbox"> checkbox</label>
-				<label class="block"><input type="checkbox" value="checkbox" checked> checked checkbox</label>
-			</div>
-			<div>
-				<label class="block"><input type="checkbox" value="checkbox" disabled> disabled checkbox</label>
-				<label class="block"><input type="checkbox" value="checkbox" disabled checked> disabled checked checkbox</label>
-			</div>
-
-			<div class="line"></div>
-
 			<div class="label">radio</div>
-			<div>
+			<div class="vertical-middle">
 				<input type="radio" name="radio" value="radio" aria-label="radio">
 				<input type="radio" name="radio" value="radio" checked aria-label="checked radio">
 			</div>
-			<div>
+			<div class="vertical-middle">
 				<input type="radio" name="disabled-radio" value="radio" disabled aria-label="disabled radio">
 				<input type="radio" name="disabled-radio" value="radio" disabled checked aria-label="disabled checked radio">
 			</div>
 
 			<div class="line"></div>
 
-			<div class="label">radio inline</div>
-			<div>
-				<label class="inline"><input type="radio" name="radio-inline" value="radio"> radio</label>
-				<label class="inline"><input type="radio" name="radio-inline" value="radio" checked> checked radio</label>
-			</div>
-			<div>
-				<label class="inline"><input type="radio" name="disabled-radio-inline" value="radio" disabled> disabled radio</label>
-				<label class="inline"><input type="radio" name="disabled-radio-inline" value="radio" disabled checked> disabled checked radio</label>
-			</div>
-
-			<div class="line"></div>
-
-			<div class="label">radio block</div>
-			<div>
-				<label class="block"><input type="radio" name="radio-block" value="radio"> radio</label>
-				<label class="block"><input type="radio" name="radio-block" value="radio" checked> checked radio</label>
-			</div>
-			<div>
-				<label class="block"><input type="radio" name="disabled-radio-block" value="radio" disabled> disabled radio</label>
-				<label class="block"><input type="radio" name="disabled-radio-block" value="radio" disabled checked> disabled checked radio</label>
-			</div>
-
-			<div class="line"></div>
-
 			<label class="label" for="color">color</label>
-			<input type="color" value="#6366f1" id="color">
-			<input type="color" value="#6366f1" disabled aria-label="disabled color">
+			<div class="vertical-middle"><input type="color" value="#6366f1" id="color"></div>
+			<div class="vertical-middle"><input type="color" value="#6366f1" disabled aria-label="disabled color"></div>
 
 			<div class="line"></div>
 		</div>
