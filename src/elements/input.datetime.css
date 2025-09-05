@@ -18,8 +18,8 @@ input::-webkit-datetime-edit-minute-field {
 }
 
 input::-webkit-calendar-picker-indicator {
-	width: 1.05em; /* Edge */
-	height: 1.05em; /* Edge */
+	width: var(--icon-size); /* Chrome, Edge, Opera */
+	height: var(--icon-size); /* Chrome, Edge, Opera */
 	padding: 0;
 	cursor: pointer;
 }

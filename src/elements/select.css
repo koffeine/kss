@@ -12,8 +12,12 @@ select:enabled {
 	background-image: url(../images/select.svg);
 	background-position: right var(--horizontal-padding) center;
 	background-repeat: no-repeat;
-	background-size: 1.05em;
-	padding: var(--vertical-padding) calc(2 * var(--horizontal-padding) + 1.05em) var(--vertical-padding) var(--horizontal-padding);
+	background-size: var(--icon-size);
+	padding:
+		var(--vertical-padding)
+		calc(var(--horizontal-padding) + var(--icon-size) + var(--horizontal-padding))
+		var(--vertical-padding)
+		var(--horizontal-padding);
 	color: var(--form-foreground-color);
 	cursor: pointer;
 }
