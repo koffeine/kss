@@ -23,7 +23,7 @@ input[type=color]::-webkit-color-swatch {
 }
 
 input[type=color]:focus:enabled::-webkit-color-swatch {
-	box-shadow: inset 0 0 0.125em var(--form-accent-color);
+	box-shadow: inset 0 0 0.125em var(--accent-color);
 }
 
 /* Firefox */
@@ -34,5 +34,5 @@ input[type=color]::-moz-color-swatch {
 
 /* Firefox */
 input[type=color]:focus:enabled::-moz-color-swatch {
-	box-shadow: inset 0 0 0.125em var(--form-accent-color);
+	box-shadow: inset 0 0 0.125em var(--accent-color);
 }
