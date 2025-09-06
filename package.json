@@ -24,14 +24,17 @@
 	},
 	"type": "module",
 	"scripts": {
-		"test": "",
+		"test": "eslint && stylelint \"**/*.css\"",
 		"dev": "vite",
 		"build": "vite build",
-		"preview": "vite preview"
+		"preview": "vite preview",
+		"prepublishOnly": "npm test"
 	},
 	"devDependencies": {
 		"@koffeine/eslint-config": "46.0.1",
 		"eslint": "9.35.0",
+		"stylelint": "^16",
+		"stylelint-config-standard": "^39",
 		"vite": "^7"
 	}
 }

@@ -6,11 +6,11 @@ button {
 	font-family: inherit;
 	font-size: inherit;
 	line-height: inherit;
-	color: white;
+	color: #ffffff;
 }
 
 button:enabled {
-	box-shadow: inset 0 0 0.125em rgba(255, 255, 255, 0.125);
+	box-shadow: inset 0 0 0.125em rgb(255 255 255 / 0.125);
 	cursor: pointer;
 }
 
@@ -20,7 +20,7 @@ button:enabled:hover {
 
 button:enabled:active {
 	filter: brightness(1);
-	box-shadow: inset 0 0 0.125em rgba(0, 0, 0, 0.125);
+	box-shadow: inset 0 0 0.125em rgb(0 0 0 / 0.125);
 }
 
 button:disabled {

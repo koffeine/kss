@@ -13,7 +13,7 @@ h1 {
 
 h2 {
 	font-size: 1.25rem;
-	margin: 2rem 0 0 0;
+	margin: 2rem 0 0;
 }
 
 .grid {
@@ -79,7 +79,7 @@ button {
 	flex-grow: 1;
 }
 
-@media (min-width: 576px) {
+@media (width >= 576px) {
 	.input-grid {
 		grid-template-columns: auto auto auto;
 	}
