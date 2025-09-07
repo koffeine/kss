@@ -7,15 +7,15 @@
 		<title>kss</title>
 
 		<link rel="icon" type="image/png" href="/kss/assets/favicon-BVf--yA8.png">
-		<link rel="stylesheet" crossorigin href="/kss/assets/index-mWlFd_Bv.css">
+		<link rel="stylesheet" crossorigin href="/kss/assets/index-Db0zETbC.css">
 	</head>
 	<body>
 		<h1><a href="https://github.com/koffeine/kss">kss</a></h1>
 
-		<h2>inputs, textarea, select & button</h2>
+		<h2>inputs, textarea & select</h2>
 
-		<div class="margin-top-1 grid">
-			<div class="grid-header">element / type</div>
+		<div class="grid input-grid">
+			<div class="grid-header">type</div>
 			<div class="grid-header">read-write / enabled</div>
 			<div class="grid-header">read-only / disabled</div>
 
@@ -33,26 +33,28 @@
 
 			<!-- <div class="line"></div> -->
 
-			<!-- Same as input[type="text"] -->
+			<!-- Safari has extra functionality not supported in other browsers -->
 			<!-- <label class="label" for="email">email</label>
 			<input type="email" value="email" id="email">
 			<input type="email" value="email" readonly aria-label="readonly email"> -->
 
-			<div class="line"></div>
+			<!-- <div class="line"></div> -->
 
-			<label class="label" for="number">number</label>
+			<!-- Firefox & Safari allows non-numerical characters -->
+			<!-- <label class="label" for="number">number</label>
 			<input type="number" value="0" id="number">
-			<input type="number" value="0" readonly aria-label="readonly number">
-
-			<div class="line"></div>
-
-			<label class="label" for="search">search</label>
-			<input type="search" value="search" id="search">
-			<input type="search" value="search" readonly aria-label="readonly search">
+			<input type="number" value="0" readonly aria-label="readonly number"> -->
 
 			<!-- <div class="line"></div> -->
 
-			<!-- Same as input[type="text"] -->
+			<!-- Firefox: https://bugzilla.mozilla.org/show_bug.cgi?id=558594 -->
+			<!-- <label class="label" for="search">search</label>
+			<input type="search" value="search" id="search">
+			<input type="search" value="search" readonly aria-label="readonly search"> -->
+
+			<!-- <div class="line"></div> -->
+
+			<!-- Safari has extra functionality not supported in other browsers -->
 			<!-- <label class="label" for="tel">tel</label>
 			<input type="tel" value="tel" id="tel">
 			<input type="tel" value="tel" readonly aria-label="readonly tel"> -->
@@ -117,17 +119,17 @@
 			<div class="line"></div>
 
 			<label class="label" for="range">range</label>
-			<input type="range" value="" id="range">
-			<input type="range" value="" disabled aria-label="disabled range">
+			<div class="vertical-middle"><input type="range" value="" id="range"></div>
+			<div class="vertical-middle"><input type="range" value="" disabled aria-label="disabled range"></div>
 
 			<div class="line"></div>
 
 			<div class="label">checkbox</div>
-			<div>
+			<div class="vertical-middle">
 				<input type="checkbox" value="checkbox" aria-label="checkbox">
 				<input type="checkbox" value="checkbox" checked aria-label="checked checkbox">
 			</div>
-			<div>
+			<div class="vertical-middle">
 				<input type="checkbox" value="checkbox" disabled aria-label="disabled checkbox">
 				<input type="checkbox" value="checkbox" disabled checked aria-label="disabled checked checkbox">
 			</div>
@@ -135,11 +137,11 @@
 			<div class="line"></div>
 
 			<div class="label">radio</div>
-			<div>
+			<div class="vertical-middle">
 				<input type="radio" name="radio" value="radio" aria-label="radio">
 				<input type="radio" name="radio" value="radio" checked aria-label="checked radio">
 			</div>
-			<div>
+			<div class="vertical-middle">
 				<input type="radio" name="disabled-radio" value="radio" disabled aria-label="disabled radio">
 				<input type="radio" name="disabled-radio" value="radio" disabled checked aria-label="disabled checked radio">
 			</div>
@@ -147,65 +149,41 @@
 			<div class="line"></div>
 
 			<label class="label" for="color">color</label>
-			<input type="color" value="#6366f1" id="color">
-			<input type="color" value="#6366f1" disabled aria-label="disabled color">
+			<div class="vertical-middle"><input type="color" value="#4f46e5" id="color"></div>
+			<div class="vertical-middle"><input type="color" value="#4f46e5" disabled aria-label="disabled color"></div>
+
+			<div class="line"></div>
+		</div>
+
+		<h2>buttons</h2>
+
+		<div class="grid button-grid">
+			<div class="grid-header">type</div>
+			<div class="grid-header">enabled</div>
+			<div class="grid-header">disabled</div>
 
 			<div class="line"></div>
 
 			<div class="label">button</div>
-			<div class="button-container">
-				<button type="button">default</button>
-				<button type="button" class="indigo">.indigo</button>
-			</div>
-			<div class="button-container">
-				<button type="button" disabled>default</button>
-				<button type="button" disabled class="indigo">.indigo</button>
-			</div>
+			<button type="button">button</button>
+			<button type="button" disabled>button</button>
+
+			<div class="line"></div>
+
+			<div class="label">button.indigo</div>
+			<button type="button" class="indigo">button</button>
+			<button type="button" class="indigo" disabled>button</button>
 
 			<div class="line"></div>
 		</div>
 
 		<h2>.group</h2>
 
-		<div class="margin-top-1 group">
+		<div class="group">
 			<input type="text" value="text" aria-label="text">
 			<button type="button">default</button>
-		</div>
-
-		<h2>.inline-labels & label.inline</h2>
-
-		<div class="margin-top-1">
-			<div class="inline-labels">
-				<label class="inline"><input type="checkbox" value="checkbox"> label.inline</label>
-				<label class="inline"><input type="checkbox" value="checkbox" checked> label.inline</label>
-			</div>
-
-			<div class="line"></div>
-
-			<div class="inline-labels">
-				<label class="inline"><input type="radio" name="radio-inline" value="radio"> label.inline</label>
-				<label class="inline"><input type="radio" name="radio-inline" value="radio" checked> label.inline</label>
-			</div>
-
-			<div class="line"></div>
-		</div>
-
-		<h2>label.block</h2>
-
-		<div class="margin-top-1">
-			<div>
-				<label class="block"><input type="checkbox" value="checkbox"> label.block</label>
-				<label class="block"><input type="checkbox" value="checkbox" checked> label.block</label>
-			</div>
-
-			<div class="line"></div>
-
-			<div>
-				<label class="block"><input type="radio" name="radio-block" value="radio"> label.block</label>
-				<label class="block"><input type="radio" name="radio-block" value="radio" checked> label.block</label>
-			</div>
-
-			<div class="line"></div>
+			<select aria-label="select"><option value="select">select</option></select>
+			<button type="button" class="indigo">indigo</button>
 		</div>
 	</body>
 </html>
