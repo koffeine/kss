@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 
 - Removed `--form-accent-color`
+- Removed `box-shadow` from button
 
 ### Fixed
 
