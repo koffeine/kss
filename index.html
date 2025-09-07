@@ -7,15 +7,15 @@
 		<title>kss</title>
 
 		<link rel="icon" type="image/png" href="/kss/assets/favicon-BVf--yA8.png">
-		<link rel="stylesheet" crossorigin href="/kss/assets/index-Db0zETbC.css">
+		<link rel="stylesheet" crossorigin href="/kss/assets/index-BZxSkU5S.css">
 	</head>
 	<body>
 		<h1><a href="https://github.com/koffeine/kss">kss</a></h1>
 
-		<h2>inputs, textarea & select</h2>
+		<h2>inputs, textarea, select & button</h2>
 
-		<div class="grid input-grid">
-			<div class="grid-header">type</div>
+		<div class="grid">
+			<div class="grid-header">element / type</div>
 			<div class="grid-header">read-write / enabled</div>
 			<div class="grid-header">read-only / disabled</div>
 
@@ -153,37 +153,44 @@
 			<div class="vertical-middle"><input type="color" value="#4f46e5" disabled aria-label="disabled color"></div>
 
 			<div class="line"></div>
-		</div>
-
-		<h2>buttons</h2>
-
-		<div class="grid button-grid">
-			<div class="grid-header">type</div>
-			<div class="grid-header">enabled</div>
-			<div class="grid-header">disabled</div>
-
-			<div class="line"></div>
 
 			<div class="label">button</div>
-			<button type="button">button</button>
-			<button type="button" disabled>button</button>
-
-			<div class="line"></div>
-
-			<div class="label">button.indigo</div>
-			<button type="button" class="indigo">button</button>
-			<button type="button" class="indigo" disabled>button</button>
+			<div class="button-container">
+				<button type="button">default</button>
+				<button type="button" class="indigo">.indigo</button>
+			</div>
+			<div class="button-container">
+				<button type="button" disabled>default</button>
+				<button type="button" disabled class="indigo">.indigo</button>
+			</div>
 
 			<div class="line"></div>
 		</div>
+
+		<h2>table</h2>
+
+		<table class="margin-top-1">
+			<thead>
+				<tr>
+					<th>header</th>
+					<th>header</th>
+					<th>header</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>data</td>
+					<td>data</td>
+					<td>data</td>
+				</tr>
+			</tbody>
+		</table>
 
 		<h2>.group</h2>
 
 		<div class="group">
 			<input type="text" value="text" aria-label="text">
 			<button type="button">default</button>
-			<select aria-label="select"><option value="select">select</option></select>
-			<button type="button" class="indigo">indigo</button>
 		</div>
 	</body>
 </html>
