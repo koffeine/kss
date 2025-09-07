@@ -7,14 +7,14 @@
 		<title>kss</title>
 
 		<link rel="icon" type="image/png" href="/kss/assets/favicon-BVf--yA8.png">
-		<link rel="stylesheet" crossorigin href="/kss/assets/index-jxp0c6hn.css">
+		<link rel="stylesheet" crossorigin href="/kss/assets/index-BqDnA1tv.css">
 	</head>
 	<body>
 		<h1><a href="https://github.com/koffeine/kss">kss</a></h1>
 
 		<h2>inputs, textarea, select & button</h2>
 
-		<div class="grid">
+		<div class="margin-top-1 grid">
 			<div class="grid-header">element / type</div>
 			<div class="grid-header">read-write / enabled</div>
 			<div class="grid-header">read-only / disabled</div>
@@ -169,11 +169,47 @@
 
 		<h2>.group</h2>
 
-		<div class="group">
+		<div class="margin-top-1 group">
 			<input type="text" value="text" aria-label="text">
 			<button type="button">default</button>
 			<select aria-label="select"><option value="select">select</option></select>
 			<button type="button" class="indigo">.indigo</button>
+		</div>
+
+		<h2>.inline-labels, label.inline</h2>
+
+		<div class="margin-top-1">
+			<div class="inline-labels">
+				<label class="inline"><input type="checkbox" value="checkbox"> label.inline</label>
+				<label class="inline"><input type="checkbox" value="checkbox" checked> label.inline</label>
+			</div>
+
+			<div class="line"></div>
+
+			<div class="inline-labels">
+				<label class="inline"><input type="radio" name="radio-inline" value="radio"> label.inline</label>
+				<label class="inline"><input type="radio" name="radio-inline" value="radio" checked> label.inline</label>
+			</div>
+
+			<div class="line"></div>
+		</div>
+
+		<h2>label.block</h2>
+
+		<div class="margin-top-1">
+			<div>
+				<label class="block"><input type="checkbox" value="checkbox"> label.block</label>
+				<label class="block"><input type="checkbox" value="checkbox" checked> label.block</label>
+			</div>
+
+			<div class="line"></div>
+
+			<div>
+				<label class="block"><input type="radio" name="radio-block" value="radio"> label.block</label>
+				<label class="block"><input type="radio" name="radio-block" value="radio" checked> label.block</label>
+			</div>
+
+			<div class="line"></div>
 		</div>
 	</body>
 </html>
