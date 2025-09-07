@@ -44,7 +44,7 @@ h2 {
 	background-color: var(--middleground-color);
 }
 
-label {
+.label {
 	padding: var(--vertical-padding) 0;
 	white-space: nowrap;
 	overflow: hidden;
