@@ -56,6 +56,11 @@
 		width: 100%;
 	}
 
+	input[type=datetime-local],
+	input[type=date] {
+		white-space: nowrap;
+	}
+
 	.button-container {
 		display: flex;
 		flex-direction: column;

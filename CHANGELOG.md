@@ -8,6 +8,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- Fixed width of non-empty datetime-local and date in Safari on iPadOS/iOS
+
 
 ## [4.0.0] - 2025-09-07
 
