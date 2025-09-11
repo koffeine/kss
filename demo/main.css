@@ -1,83 +1,89 @@
-body {
-	margin: 0 auto;
-	padding: 2em 1em;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-h1 {
-	font-size: 1.5rem;
-	margin: 0;
-}
-
-h2 {
-	font-size: 1.25rem;
-	margin: 2rem 0 0;
-}
-
-.margin-top-1 {
-	margin-top: 1em;
-}
-
-.grid {
-	display: grid;
-	grid-template-columns: 1fr 2fr 2fr;
-	gap: 0.5em;
-}
-
-.grid-header {
-	padding: var(--padding);
-	font-weight: bold;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-}
-
-.grid-header:first-child {
-	padding: var(--vertical-padding) 0;
-}
-
-.line {
-	grid-column: 1 / 4;
-	height: 0.0625em;
-	background-color: var(--middleground-color);
-}
-
-.label {
-	padding: var(--vertical-padding) 0;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-}
-
-input {
-	width: 100%;
-}
-
-.button-container {
-	display: flex;
-	flex-direction: column;
-	gap: var(--horizontal-padding);
-	align-items: flex-start;
-}
-
-.group input,
-.group select {
-	flex-basis: 6em;
-	flex-grow: 1;
-}
-
-@media (width >= 576px) {
-	.grid {
-		grid-template-columns: auto auto auto;
+.demo {
+	body {
+		margin: 0 auto;
+		padding: 2em 1em;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 
-	input, textarea, select {
-		width: 12em;
+	h1 {
+		font-size: 1.5rem;
+		margin: 0;
+	}
+
+	h2 {
+		font-size: 1.25rem;
+		margin: 2rem 0 0;
+	}
+
+	.margin-top-1 {
+		margin-top: 1em;
+	}
+
+	.grid {
+		display: grid;
+		grid-template-columns: 1fr 2fr 2fr;
+		gap: 0.5em;
+	}
+
+	.grid-header {
+		padding: var(--padding);
+		font-weight: bold;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	.grid-header:first-child {
+		padding: var(--vertical-padding) 0;
+	}
+
+	.line {
+		grid-column: 1 / 4;
+		height: 0.0625em;
+		background-color: var(--middleground-color);
+	}
+
+	.label {
+		padding: var(--vertical-padding) 0;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	input:not([type=checkbox], [type=radio], [type=color]),
+	textarea,
+	select {
+		width: 100%;
 	}
 
 	.button-container {
-		flex-direction: row;
+		display: flex;
+		flex-direction: column;
+		gap: var(--horizontal-padding);
+		align-items: flex-start;
+	}
+
+	.group input,
+	.group select {
+		flex-basis: 6em;
+		flex-grow: 1;
+	}
+
+	@media (width >= 576px) {
+		.grid {
+			grid-template-columns: auto auto auto;
+		}
+
+		input:not([type=checkbox], [type=radio], [type=color]),
+		textarea,
+		select {
+			width: 12em;
+		}
+
+		.button-container {
+			flex-direction: row;
+		}
 	}
 }
