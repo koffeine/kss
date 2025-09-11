@@ -23,7 +23,7 @@
 
 	.grid {
 		display: grid;
-		grid-template-columns: 1fr 2fr 2fr;
+		grid-template-columns: max-content 1fr 1fr;
 		gap: 0.5em;
 	}
 
@@ -40,16 +40,14 @@
 	}
 
 	.line {
-		grid-column: 1 / 4;
+		grid-column: 1 / -1;
 		height: 0.0625em;
 		background-color: var(--middleground-color);
 	}
 
+	label:not(.inline, .block),
 	.label {
 		padding: var(--vertical-padding) 0;
-		white-space: nowrap;
-		overflow: hidden;
-		text-overflow: ellipsis;
 	}
 
 	input:not([type=checkbox], [type=radio], [type=color]),
@@ -65,17 +63,7 @@
 		align-items: flex-start;
 	}
 
-	.group input,
-	.group select {
-		flex-basis: 6em;
-		flex-grow: 1;
-	}
-
 	@media (width >= 576px) {
-		.grid {
-			grid-template-columns: auto auto auto;
-		}
-
 		input:not([type=checkbox], [type=radio], [type=color]),
 		textarea,
 		select {
