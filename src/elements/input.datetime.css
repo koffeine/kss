@@ -2,6 +2,7 @@ input[type=datetime-local],
 input[type=date],
 input[type=time] {
 	cursor: text;
+	height: calc(var(--vertical-padding) + 1em * var(--line-height) + var(--vertical-padding)); /* Safari iPadOS/iOS */
 }
 
 /* Safari macOS */
