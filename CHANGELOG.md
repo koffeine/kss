@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fixed width of non-empty datetime-local and date in Safari on iPadOS/iOS
 - Fixed height of empty datetime-local, date and time in Safari on iPadOS/iOS
 - Fixed extra space after datetime-local, date and time in Safari on iPadOS/iOS
+- Fixed extra space after textarea
 
 
 ## [4.0.0] - 2025-09-07
