@@ -1,0 +1,14 @@
+.grid {
+	display: grid;
+}
+
+.grid .header {
+	border-bottom: 0.0625em solid var(--middleground-color);
+	padding: var(--padding);
+	font-weight: bold;
+}
+
+.grid .cell {
+	border-bottom: 0.0625em solid var(--middleground-color);
+	padding: var(--padding);
+}
