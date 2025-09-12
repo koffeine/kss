@@ -61,7 +61,7 @@
 		white-space: nowrap;
 	}
 
-	.button-container {
+	.buttons {
 		display: flex;
 		flex-direction: column;
 		gap: var(--horizontal-padding);
@@ -75,7 +75,7 @@
 			width: 12em;
 		}
 
-		.button-container {
+		.buttons {
 			flex-direction: row;
 		}
 	}
