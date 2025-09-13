@@ -3,11 +3,6 @@ input[type=number]::-webkit-textfield-decoration-container {
 	gap: var(--horizontal-padding);
 }
 
-/* Safari macOS */
-input[type=number]::-webkit-inner-spin-button {
-	width: 1em;
-}
-
 input[type=number]:read-write::-webkit-inner-spin-button {
 	opacity: 1; /* Chromium */
 	cursor: pointer; /* Chromium, Safari macOS */
