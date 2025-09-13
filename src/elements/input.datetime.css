@@ -55,11 +55,15 @@ input[type=time]::-webkit-date-and-time-value {
 input[type=datetime-local]::-webkit-calendar-picker-indicator,
 input[type=date]::-webkit-calendar-picker-indicator,
 input[type=time]::-webkit-calendar-picker-indicator {
-	width: var(--icon-size);
-	height: var(--icon-size);
+	width: 1em;
+	height: 1em;
 	margin: 0 0 0 var(--horizontal-padding);
 	padding: 0;
 	cursor: pointer;
+
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: var(--icon-size);
 }
 
 /* Chromium */
