@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Fixed icon size of number in Safari on macOS
 - Fixed icon margin of search in Chromium and Safari on macOS/iPadOS/iOS
+- Fixed gap of datetime-local and date on Chromium
 
 
 ## [4.2.0] - 2025-09-12

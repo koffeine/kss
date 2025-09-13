@@ -57,6 +57,7 @@ input[type=date]::-webkit-calendar-picker-indicator,
 input[type=time]::-webkit-calendar-picker-indicator {
 	width: var(--icon-size);
 	height: var(--icon-size);
+	margin: 0 0 0 var(--horizontal-padding);
 	padding: 0;
 	cursor: pointer;
 }
