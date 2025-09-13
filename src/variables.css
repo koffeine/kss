@@ -15,11 +15,11 @@
 	--background-color: #222222;
 	--middleground-color: #898989;
 	--foreground-color: #f0f0f0;
-	--accent-color: #6366f1; /* images/(calendar|clock|select).svg */
+	--accent-color: #6366f1; /* images/(calendar|chevron-down|clock).svg */
 
 	--form-background-color: #313131;
 	--form-read-only-color: #989898;
 	--form-foreground-color: #ffffff;
 
-	--icon-size: 1em;
+	--icon-size: 1.25em;
 }

@@ -9,8 +9,8 @@ select {
 }
 
 select:enabled {
-	background-image: url(../images/select.svg);
-	background-position: right var(--horizontal-padding) center;
+	background-image: url(../images/chevron-down.svg);
+	background-position: right calc(var(--horizontal-padding) - (var(--icon-size) - 1em) / 2) center;
 	background-repeat: no-repeat;
 	background-size: var(--icon-size);
 	padding:
