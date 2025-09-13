@@ -22,15 +22,12 @@
 	}
 
 	.form-grid {
-		grid-template-columns: max-content 1fr 1fr;
+		grid-template-columns: max-content repeat(2, minmax(0, 1fr));
 		gap: 0.5em;
 	}
 
 	.form-grid .header {
 		border-bottom: none;
-		white-space: nowrap;
-		overflow: hidden;
-		text-overflow: ellipsis;
 	}
 
 	.form-grid .header:first-child {
@@ -46,12 +43,6 @@
 	label:not(.inline, .block),
 	.label {
 		padding: var(--vertical-padding) 0;
-	}
-
-	input:not([type=checkbox], [type=radio], [type=color]),
-	textarea,
-	select {
-		width: 100%;
 	}
 
 	input[type=datetime-local],
@@ -74,7 +65,7 @@
 		input:not([type=checkbox], [type=radio], [type=color]),
 		textarea,
 		select {
-			width: 12em;
+			width: 15em;
 		}
 
 		.buttons {
