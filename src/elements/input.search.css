@@ -9,8 +9,15 @@ input[type=search]::-webkit-search-decoration {
 }
 
 input[type=search]:read-write::-webkit-search-cancel-button {
+	appearance: none; /* Chromium, Safari macOS */
 	align-self: center; /* Safari macOS/iPadOS/iOS */
 	margin: 0; /* Chromium, Safari macOS/iPadOS/iOS */
+	width: 1em; /* Chromium, Safari macOS/iPadOS/iOS */
+	height: 1em; /* Chromium, Safari macOS/iPadOS/iOS */
+	background-image: url(../images/xmark.svg); /* Chromium, Safari macOS/iPadOS/iOS */
+	background-position: center; /* Chromium, Safari macOS/iPadOS/iOS */
+	background-repeat: no-repeat; /* Chromium, Safari macOS/iPadOS/iOS */
+	background-size: var(--icon-size); /* Chromium, Safari macOS/iPadOS/iOS */
 	opacity: 1; /* Chromium */
 	cursor: pointer; /* Chromium, Safari macOS */
 }
