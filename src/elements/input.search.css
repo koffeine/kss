@@ -1,9 +1,9 @@
-/* Chromium, Safari macOS */
+/* Chromium, Safari macOS/iPadOS/iOS */
 input[type=search]::-webkit-textfield-decoration-container {
 	gap: var(--horizontal-padding);
 }
 
-/* Safari macOS */
+/* Safari macOS/iPadOS/iOS */
 input[type=search]::-webkit-search-decoration {
 	display: none;
 }
