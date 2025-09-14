@@ -13,7 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Added icon to search
+- Added icon to search input
 
 ### Changed
 
@@ -21,9 +21,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- Fixed icon size of number in Safari on macOS
-- Fixed icon margin of search in Chromium and Safari on macOS/iPadOS/iOS
-- Fixed gap of datetime-local and date on Chromium
+- Fixed icon size of number input in Safari on macOS
+- Fixed icon margin of search input in Chromium and Safari on macOS/iPadOS/iOS
+- Fixed gap of datetime-local and date inputs in Chromium
 
 
 ## [4.2.0] - 2025-09-12
@@ -44,9 +44,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- Fixed width of non-empty datetime-local and date in Safari on iPadOS/iOS
-- Fixed height of empty datetime-local, date and time in Safari on iPadOS/iOS
-- Fixed extra space after datetime-local, date and time in Safari on iPadOS/iOS
+- Fixed width of non-empty datetime-local and date inputs in Safari on iPadOS/iOS
+- Fixed height of empty datetime-local, date and time inputs in Safari on iPadOS/iOS
+- Fixed extra space after datetime-local, date and time inputs in Safari on iPadOS/iOS
 - Fixed extra space after textarea
 
 
@@ -62,7 +62,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Changed focus from `:focus` and `box-shadow` to `:focus-visible` and `outline`
 - Changed icons sizes from `1.05em` to `1em`
-- Changed the top and bottom margins of checkbox, color, radio and range from `0` to a value that aligns their box-size with the rest of the inputs
+- Changed the top and bottom margins of checkbox, color, radio and range inputs from `0` to a value that aligns their box-size with the rest of the inputs
 - Updated to current browsers
 
 ### Removed
@@ -82,7 +82,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- Updated calendar & clock icons
+- Updated calendar and clock icons
 - Moved `cursor: text` from input to read-only input, date, datetime-local and time inputs
 - Moved `cursor: text` from textarea to read-only textarea
 - Changed `padding-top: 0; padding-bottom: 0;` to `padding: 0;` in fields of date, datetime-local and time inputs
@@ -90,16 +90,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 
 - Removed search input (functionality not supported in Firefox)
-- Removed number input (Firefox & Safari allows non-numerical characters)
+- Removed number input (Firefox and Safari allows non-numerical characters)
 - Removed unnecessary properties
 
 ### Fixed
 
-- Fixed missing focus on readonly inputs & textarea (because they are focusable)
-- Fixed position of checkbox, color & radio inputs (they are now vertically centered)
-- Fixed potential misalignment of checked marker in checkbox & radio inputs (happened when changing padding)
-- Fixed size of calendar & clock icons in Edge (they now match the size used in other browsers)
-- Fixed size & position of drowdown icon (to match calendar & clock icons)
+- Fixed missing focus on readonly inputs and textarea (because they are focusable)
+- Fixed position of checkbox, color and radio inputs (they are now vertically centered)
+- Fixed potential misalignment of checked marker in checkbox and radio inputs (happened when changing padding)
+- Fixed size of calendar and clock icons in Edge (they now match the size used in other browsers)
+- Fixed size and position of drowdown icon (to match calendar and clock icons)
 
 
 ## [2.0.1] - 2023-04-16
@@ -132,10 +132,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Added `-webkit-appearance: none` to input and textarea elements (fixes missing focus box-shadows on iOS)
-- Added `height: calc(var(--line-height) * 1em + var(--vertical-padding) * 2)` to date, datetime-local and time inputs (fixes too small height when value is empty on iOS)
-- Added `vertical-align: top` to date, datetime-local and time inputs (removes extra gap at bottom on iOS)
-- Added `text-align: left` to input::-webkit-date-and-time-value (fixes center alignment on iOS)
+- Added `-webkit-appearance: none` to input and textarea (fixes missing focus box-shadows in Safari on iPadOS/iOS)
+- Added `height: calc(var(--line-height) * 1em + var(--vertical-padding) * 2)` to date, datetime-local and time inputs (fixes too small height when value is empty in Safari on iPadOS/iOS)
+- Added `vertical-align: top` to date, datetime-local and time inputs (removes extra gap at bottom in Safari on iPadOS/iOS)
+- Added `text-align: left` to input::-webkit-date-and-time-value (fixes center alignment in Safari on iPadOS/iOS)
 
 ### Removed
 
@@ -146,22 +146,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Added `color-scheme: dark` to :root element (makes date and time picker modals dark)
+- Added `color-scheme: dark` to :root (makes date and time picker modals dark)
 
 
 ## [1.0.2] - 2021-12-02
 
 ### Added
 
-- Added `vertical-align: top` to textarea element (removes extra gap at bottom)
-- Added `resize: none` to textarea element
+- Added `vertical-align: top` to textarea (removes extra gap at bottom)
+- Added `resize: none` to textarea
 
 
 ## [1.0.1] - 2021-11-23
 
 ### Added
 
-- Added `cursor: pointer` to label element
+- Added `cursor: pointer` to label
 
 
 ## [1.0.0] - 2021-11-17
