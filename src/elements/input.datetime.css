@@ -1,60 +1,33 @@
-input[type=datetime-local],
-input[type=date],
-input[type=time] {
+input:is([type=datetime-local], [type=date], [type=time]) {
 	cursor: text;
 	vertical-align: top; /* Safari iPadOS/iOS */
 	height: calc(var(--vertical-padding) + 1em * var(--line-height) + var(--vertical-padding)); /* Safari iPadOS/iOS */
 }
 
-/* Safari macOS */
-input[type=datetime-local]::-webkit-datetime-edit,
-input[type=date]::-webkit-datetime-edit,
-input[type=time]::-webkit-datetime-edit,
-/* Chromium */
-input[type=datetime-local]::-webkit-datetime-edit-fields-wrapper,
-input[type=date]::-webkit-datetime-edit-fields-wrapper,
-input[type=time]::-webkit-datetime-edit-fields-wrapper,
-
-/* Chromium, Safari macOS */
-input[type=datetime-local]::-webkit-datetime-edit-year-field,
-input[type=date]::-webkit-datetime-edit-year-field,
-input[type=datetime-local]::-webkit-datetime-edit-month-field,
-input[type=date]::-webkit-datetime-edit-month-field,
-input[type=datetime-local]::-webkit-datetime-edit-day-field,
-input[type=date]::-webkit-datetime-edit-day-field,
-
-/* Chromium, Safari macOS */
-input[type=datetime-local]::-webkit-datetime-edit-hour-field,
-input[type=time]::-webkit-datetime-edit-hour-field,
-input[type=datetime-local]::-webkit-datetime-edit-minute-field,
-input[type=time]::-webkit-datetime-edit-minute-field,
-/* Chromium */
-input[type=datetime-local]::-webkit-datetime-edit-ampm-field,
-input[type=time]::-webkit-datetime-edit-ampm-field,
-/* Safari macOS */
-input[type=datetime-local]::-webkit-datetime-edit-meridiem-field,
-input[type=time]::-webkit-datetime-edit-meridiem-field {
+input:is([type=datetime-local], [type=date], [type=time])::-webkit-datetime-edit, /* Safari macOS */
+input:is([type=datetime-local], [type=date], [type=time])::-webkit-datetime-edit-fields-wrapper, /* Chromium */
+input:is([type=datetime-local], [type=date])::-webkit-datetime-edit-year-field, /* Chromium, Safari macOS */
+input:is([type=datetime-local], [type=date])::-webkit-datetime-edit-month-field, /* Chromium, Safari macOS */
+input:is([type=datetime-local], [type=date])::-webkit-datetime-edit-day-field, /* Chromium, Safari macOS */
+input:is([type=datetime-local], [type=time])::-webkit-datetime-edit-hour-field, /* Chromium, Safari macOS */
+input:is([type=datetime-local], [type=time])::-webkit-datetime-edit-minute-field, /* Chromium, Safari macOS */
+input:is([type=datetime-local], [type=time])::-webkit-datetime-edit-ampm-field, /* Chromium */
+input:is([type=datetime-local], [type=time])::-webkit-datetime-edit-meridiem-field /* Safari macOS */ {
 	padding: 0;
 }
 
 /* Safari macOS */
-input[type=datetime-local]::-webkit-datetime-edit-text,
-input[type=date]::-webkit-datetime-edit-text,
-input[type=time]::-webkit-datetime-edit-text {
+input:is([type=datetime-local], [type=date], [type=time])::-webkit-datetime-edit-text {
 	margin: 0;
 }
 
 /* Safari iPadOS/iOS */
-input[type=datetime-local]::-webkit-date-and-time-value,
-input[type=date]::-webkit-date-and-time-value,
-input[type=time]::-webkit-date-and-time-value {
+input:is([type=datetime-local], [type=date], [type=time])::-webkit-date-and-time-value {
 	text-align: left;
 }
 
 /* Chromium */
-input[type=datetime-local]::-webkit-calendar-picker-indicator,
-input[type=date]::-webkit-calendar-picker-indicator,
-input[type=time]::-webkit-calendar-picker-indicator {
+input:is([type=datetime-local], [type=date], [type=time])::-webkit-calendar-picker-indicator {
 	width: 1em;
 	height: 1em;
 	margin: 0 0 0 var(--horizontal-padding);
@@ -67,8 +40,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
 }
 
 /* Chromium */
-input[type=datetime-local]::-webkit-calendar-picker-indicator,
-input[type=date]::-webkit-calendar-picker-indicator {
+input:is([type=datetime-local], [type=date])::-webkit-calendar-picker-indicator {
 	background-image: url(../images/calendar.svg);
 }
 
@@ -77,14 +49,8 @@ input[type=time]::-webkit-calendar-picker-indicator {
 	background-image: url(../images/clock.svg);
 }
 
-/* Safari macOS/iPadOS/iOS */
-input[type=datetime-local]:focus-within,
-input[type=date]:focus-within,
-input[type=time]:focus-within,
-/* Chromium */
-input[type=datetime-local]::-webkit-calendar-picker-indicator:focus-within,
-input[type=date]::-webkit-calendar-picker-indicator:focus-within,
-input[type=time]::-webkit-calendar-picker-indicator:focus-within {
+input:is([type=datetime-local], [type=date], [type=time]):focus-within, /* Safari macOS/iPadOS/iOS */
+input:is([type=datetime-local], [type=date], [type=time])::-webkit-calendar-picker-indicator:focus-within { /* Chromium */
 	outline: var(--outline);
 	outline-offset: var(--outline-offset);
 }
