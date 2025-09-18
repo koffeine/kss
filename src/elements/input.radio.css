@@ -24,7 +24,7 @@ input[type=radio]:checked::after {
 	width: 50%;
 	height: 50%;
 	border-radius: 50%;
-	content: ''
+	content: '';
 }
 
 input[type=radio]:checked:enabled::after {
