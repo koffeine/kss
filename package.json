@@ -31,8 +31,8 @@
 		"prepublishOnly": "npm test"
 	},
 	"devDependencies": {
-		"@koffeine/eslint-config": "46.0.1",
-		"eslint": "9.35.0",
+		"@koffeine/eslint-config": "47.1.0",
+		"eslint": "9.39.0",
 		"stylelint": "^16",
 		"stylelint-config-standard": "^39",
 		"vite": "^7"
