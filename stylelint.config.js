@@ -2,6 +2,7 @@ import standard from 'stylelint-config-standard';
 
 /** @type {import('stylelint').Config} */
 export default {
+	ignoreFiles: 'dist/**/*',
 	rules: {
 		...standard.rules,
 		'alpha-value-notation': 'number',
