@@ -13,10 +13,7 @@
 	"files": [
 		"src"
 	],
-	"exports": {
-		".": "./src/index.css",
-		"./package.json": "./package.json"
-	},
+	"exports": "./src/index.css",
 	"type": "module",
 	"scripts": {
 		"test": "eslint && tsc -p jsconfig.json && stylelint \"**/*.css\"",
