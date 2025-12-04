@@ -20,9 +20,3 @@ npm install @koffeine/kss
 ```css
 @import url(@koffeine/kss);
 ```
-
-## License
-
-Copyright © Kornél Horváth
-
-Licensed under the [MIT License](https://raw.githubusercontent.com/koffeine/kss/master/LICENSE).
