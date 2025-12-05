@@ -9,8 +9,14 @@
 		// Modules
 		"module": "nodenext",
 		"moduleResolution": "nodenext",
+		"noUncheckedSideEffectImports": true,
+		"types": [],
+
+		// Emit
+		"noEmit": true,
 
 		// JavaScript Support
+		"allowJs": true,
 		"checkJs": true,
 
 		// Language and Environment
