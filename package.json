@@ -9,14 +9,17 @@
 	"bugs": "https://github.com/koffeine/kss/issues",
 	"license": "MIT",
 	"author": "Kornél Horváth <kornel.horvath@me.com>",
-	"repository": "koffeine/kss",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/koffeine/kss.git"
+	},
 	"files": [
 		"src"
 	],
 	"exports": "./src/index.css",
 	"type": "module",
 	"scripts": {
-		"test": "eslint && tsc -p jsconfig.json && stylelint \"**/*.css\"",
+		"test": "eslint && tsc && stylelint \"**/*.css\"",
 		"dev": "vite",
 		"build": "vite build",
 		"preview": "vite preview",
