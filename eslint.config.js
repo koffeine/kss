@@ -5,6 +5,9 @@ import globals from 'globals';
 export default [
 	...koffeine,
 	{
+		ignores: [ 'dist' ],
+	},
+	{
 		files: [ '*' ],
 		languageOptions: {
 			globals: globals.node
