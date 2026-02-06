@@ -5,7 +5,6 @@ export default {
 	ignoreFiles: 'dist/**/*',
 	rules: {
 		...standard.rules,
-		'alpha-value-notation': 'number',
 		'at-rule-empty-line-before': null,
 		'color-hex-length': 'long',
 		'custom-property-empty-line-before': null,
