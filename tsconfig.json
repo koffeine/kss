@@ -3,13 +3,9 @@
 		"stylelint.config.js"
 	],
 	"compilerOptions": {
-		// Type Checking
-		"strict": true,
-
 		// Modules
 		"module": "nodenext",
 		"moduleResolution": "nodenext",
-		"noUncheckedSideEffectImports": true,
 		"types": [],
 
 		// Emit
