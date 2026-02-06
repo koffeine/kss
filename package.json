@@ -26,13 +26,13 @@
 		"prepublishOnly": "npm test"
 	},
 	"devDependencies": {
-		"@koffeine/eslint-config": "^47",
-		"eslint": "^9",
-		"globals": "^16",
-		"stylelint": "^16",
-		"stylelint-config-standard": "^39",
-		"typescript": "^5",
-		"vite": "^7"
+		"@koffeine/eslint-config": "^48.2.0",
+		"eslint": "^10.0.2",
+		"globals": "^17.3.0",
+		"stylelint": "^17.4.0",
+		"stylelint-config-standard": "^40.0.0",
+		"typescript": "^5.9.3",
+		"vite": "^7.3.1"
 	},
 	"devEngines": {
 		"runtime": {
