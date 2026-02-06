@@ -26,18 +26,22 @@
 		"prepublishOnly": "npm test"
 	},
 	"devDependencies": {
-		"@koffeine/eslint-config": "^47",
-		"eslint": "^9",
-		"globals": "^16",
-		"stylelint": "^16",
-		"stylelint-config-standard": "^39",
-		"typescript": "^5",
-		"vite": "^7"
+		"@koffeine/eslint-config": "^49.10.0",
+		"eslint": "^10.14.0",
+		"globals": "^17.14.0",
+		"stylelint": "^18.0.0",
+		"stylelint-config-standard": "^41.0.0",
+		"typescript": "^6.0.3",
+		"vite": "^7.3.7"
+	},
+	"allowScripts": {
+		"esbuild": true,
+		"fsevents": true
 	},
 	"devEngines": {
 		"runtime": {
 			"name": "node",
-			"version": "24"
+			"version": "26"
 		}
 	}
 }
